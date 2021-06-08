@@ -2,11 +2,17 @@
 
 [0521CD] Full Stack
 
-Digital House Proyecto Integrador Grupo 2
+# Digital House Proyecto Integrador Grupo 2
 
-Integrantes
+## Integrantes
 
-Belen Sanguinetti
-Noelia Abate
-Agustín Dell'orto
-Federico Alonso
+* Belen Sanguinetti
+* Noelia Abate
+* Agustín Dell'orto
+* Federico Alonso
+
+---
+
+## Objetivo
+
+---
