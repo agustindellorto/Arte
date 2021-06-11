@@ -30,10 +30,15 @@ https://trello.com/b/ii0K7kP9/dhgrupo2-0521cd-full-stack
 ## 5 páginas referentes en las que se basa nuestro proyecto
 
 https://www.artquid.com/
+
 https://www.artsy.net/
+
 https://www.artfinder.com/#/
+
 https://www.singulart.com/en/
+
 https://www.artelowcost.net/
+
 
 ## Link a Mock-up
 
