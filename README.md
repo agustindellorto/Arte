@@ -7,16 +7,16 @@
 ## Autores ✒️
 
 * **Belen Sanguinetti** Lic en Administración y fotografa. 25 años. 
-  fa-location-arrow NSW, Australia
+  NSW, Australia
  
 * **Noelia Abate** Comunicadora social y fotografa. "No hace mucho me acerqué al mundo de la programación,y espero con ansias aprender a hablar y escribir javascriptniano!" 36 años.
-  fa-location-arrow Buenos Aires. 
+  Buenos Aires, Argentina.
 
 * **Agustín Dell'orto** Realizador audiovisual y montajista freelance. 37 años. 
-  fa-location-arrow Buenos Aires, Argentina. 
+  Buenos Aires, Argentina. 
 
 * **Federico Alonso**
-  fa-location-arrow Buenos Aires, Argentina. 
+  Buenos Aires, Argentina. 
 
 ## Objetivo
 
@@ -24,8 +24,10 @@ Esta galeria online tiene como principal objetivo visibilizar y apoyar a artista
 
 ## Temática y descripción del sitio.
 
-Sitio de compra-venta online de obras de arte, diseñado para que *artistas independientes* puedan exponer y comercializar sus obras, y *compradores* puedan acceder a obras de artistas talentosos a precios accesibles. 
-Al navegar por el sitio, el usuario podrá observar el catálogo de las obras expuestas y filtrar de acuerdo a sus intereses. Un carrito de compras le permitirá acumular la cantidad de obras que quiera comprar, pudiendo visualizar el resumen de compra y monto acumulado. Una vez finalizada la selección, pasará por el *checkout* para finalizar la compra y completar los datos de envío y pago. 
+Sitio de compra-venta online de obras de arte, diseñado para que *artistas independientes* puedan exponer y comercializar sus obras, y *compradores* puedan acceder a obras de artistas talentosos a precios accesibles.  
+
+Al navegar por el sitio, el usuario podrá observar el catálogo de las obras expuestas y filtrar de acuerdo a sus intereses. Un carrito de compras le permitirá acumular la cantidad de obras que quiera comprar, pudiendo visualizar el resumen de compra y monto acumulado. Una vez finalizada la selección, pasará por el *checkout* para finalizar la compra y completar los datos de envío y pago.  
+
 Para el artista/vendedor el sitio es una vidriera de sus obras, permitiendo mostrar su portfolio en su perfil.
 
 
