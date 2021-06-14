@@ -15,7 +15,7 @@
 * **Agustín Dell'orto** Realizador audiovisual y montajista freelance. 37 años. 
   Buenos Aires, Argentina. 
 
-* **Federico Alonso**
+* **Federico Alonso** Alumno en Digital House. 19 años. 
   Buenos Aires, Argentina. 
 
 ## Objetivo
