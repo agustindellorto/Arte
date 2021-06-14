@@ -9,7 +9,7 @@
 * **Belen Sanguinetti** Lic en Administración y fotografa. 25 años. 
   NSW, Australia
  
-* **Noelia Abate** Comunicadora social y fotografa. "No hace mucho me acerqué al mundo de la programación,y espero con ansias aprender a hablar y escribir javascriptniano!" 36 años.
+* **Noelia Abate** Comunicadora social y fotografa. 36 años.
   Buenos Aires, Argentina.
 
 * **Agustín Dell'orto** Realizador audiovisual y montajista freelance. 37 años. 
