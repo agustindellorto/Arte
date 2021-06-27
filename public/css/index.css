@@ -1,0 +1,86 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Codido del Header, Copiar y pegar en cada vista*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid #ebebeb;
+}
+
+#buscador{
+    align-items: center;
+    width: 50%;
+    display: flex;
+}
+
+#botonBusqueda{
+    background-color: white;
+    border: none;
+}
+
+#botonBusqueda:hover{
+    color: gray;
+}
+
+#barraBusqueda{
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 60%;
+}
+
+#carroHeader{
+    background-color: white;
+    border: none;
+    width: 16px;
+    height: 15px;
+    align-self: center;
+    padding: 0px
+}
+
+#carroHeader:hover{
+    color: gray;
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-right: 15px;
+}
+
+@media (min-width: 0px) and (max-width: 380px){
+    #navBar{
+        display: none;
+    }
+    #menuHamburguesa{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+#menuHamburguesa:focus{
+    color: gray;
+}
+
+    #buscador{
+        width: 60%;
+    }
+    #logo{
+        width: 20%;
+    }
+}
+
+@media (min-width: 381px){
+    #menuHamburguesa{
+        display: none;
+    }
+}
+/*Fin del codigo del Header*/
