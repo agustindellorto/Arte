@@ -26,6 +26,7 @@ header{
 
 #botonBusqueda:hover{
     color: gray;
+    cursor: pointer;
 }
 
 #barraBusqueda{
@@ -48,6 +49,7 @@ header{
 
 #carroHeader:hover{
     color: gray;
+    cursor: pointer;
 }
 
 #navBar{
@@ -58,27 +60,120 @@ header{
 
 .nav:hover{
     text-decoration: underline 1px solid black;
+    cursor: pointer;
 }
 
+#menuHamburguesa{
+    display: none;
+}
+/*Fin del codigo del Header*/
+
+/*Codigo carrusel*/
+#carrusel{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#irACategorias{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 25%;
+}
+
+#irACategorias:hover{
+    box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+/*fin codigo carrusel*/
+
+/*codigo iconos inicio*/
+#infoSeguridad{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.items{
+    width: 33%;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.textos{
+    text-align: center;
+}
+/*fin codigo iconos de inicio*/
+
+/*Categorias*/
+#categorias{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categ{
+    width: 20%;
+    background-color: gray;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+}
+/*fin codigo categorias*/
+
+/*media queries(dejar al final de la hoja de estilo)*/
 @media (min-width: 0px) and (max-width: 380px){
     #navBar{
         display: none;
     }
+
     #menuHamburguesa{
         width: 20%;
         display: flex;
         justify-content: center;
     }
 
-#menuHamburguesa:focus{
-    color: gray;
-}
-
     #buscador{
         width: 60%;
     }
+
     #logo{
         width: 20%;
+    }
+
+    #categorias {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categ{
+     width: 100%;
+     background-color: gray;
+     height: 20vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 4vw;
+     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+     font-weight: bold;
+     color: white;
     }
 }
 
@@ -87,4 +182,3 @@ header{
         display: none;
     }
 }
-/*Fin del codigo del Header*/
