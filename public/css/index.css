@@ -34,6 +34,7 @@ header{
     border-right: none;
     border-left: none;
     width: 60%;
+    outline: none;
 }
 
 #carroHeader{
@@ -52,8 +53,11 @@ header{
 #navBar{
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
-    margin-right: 15px;
+    width: 45%;
+}
+
+.nav:hover{
+    text-decoration: underline 1px solid black;
 }
 
 @media (min-width: 0px) and (max-width: 380px){
