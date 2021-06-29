@@ -1,0 +1,96 @@
+/* HOJA DE ESTILOS GENERAL
+Dentro de esta hoja se definen los estilos generales que afectan a todo el sitio:
+ header, footer, * , estilo de parrafos, titulos y subtitulos)*/
+
+ 
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.3em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ /* Codido del Header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid #ebebeb;
+}
+
+#logo {
+    width:50px;
+}
+
+#buscador{
+    align-items: center;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+#botonBusqueda{
+    background-color: white;
+    border: none;
+    padding-left: 2em;
+}
+
+#botonBusqueda:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+#barraBusqueda{
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 60%;
+    outline: none;
+}
+
+#carroHeader{
+    background-color: white;
+    border: none;
+    width: 16px;
+    height: 15px;
+    align-self: center;
+    padding: 0px
+}
+
+#carroHeader:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+#navBar{
+    width: 50%;
+}
+
+#menu {
+list-style-type: none;
+display: flex;
+justify-content: space-evenly;
+}
+
+ul#menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul#menu li:hover{
+    text-decoration: underline 1px solid black;
+    cursor: pointer;
+}
+
+#menuHamburguesa{
+    display: none;
+}
+/*Fin del codigo del Header*/
+
+
+
