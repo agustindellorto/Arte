@@ -1,0 +1,141 @@
+
+.imagen{
+    margin: 10px;
+    width: 18vw;
+    
+
+}
+.productoCarrito{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.nombreObra{
+    width: 35%;
+    font-size: 12px;
+}
+.cruz{
+    margin-left: auto;
+}
+
+.precioArtista{
+    align-self: center;
+    display: flex;
+    margin: 5px 85px;
+}
+
+.precio{
+    margin-left: 129px;
+    margin-top: 15px;
+}
+
+#finalizarCompra{
+    background-color:black;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.totalCompra{
+    margin: 10px;
+}
+
+#carrito{
+    display: none;
+}
+
+#seleccion{
+    display: none;
+}
+.compra2{
+    display: none;
+}
+#anteFooter{
+    display: none;
+}
+
+
+
+
+@media (min-width:768px){
+    #carrito{
+        display: block;
+        text-align: center;
+    }
+    #seleccion{
+        display: block;
+        margin: 10px;
+    }
+    #country{
+        width: 25%;
+    }
+    .cruz, .totalCompra, #finalizarCompra{
+        display: none;
+    }
+    .flexCompras{
+        display: flex;
+    }
+    .compra1{
+        width: 50%;
+        background-color: aliceblue;
+    }
+    .compra2{
+        display: block;
+        width: 45%;
+        background-color: aliceblue;
+        padding: 0 8px;
+    }
+    #cupon{
+        margin-left: 4em;
+    }
+    #boton{
+        margin-left: 5.5em;
+        background-color:grey;
+        border: none;
+        padding: 5px 8px;
+        text-align: center;
+        color: white;
+    }
+    #continuarCompra{
+        
+        background-color:black;
+        border: none;
+        padding: 5px 8px;
+        text-align: center;
+        color: white;
+        width: 100%
+    }
+    #anteFooter{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .continuarComprando{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        border: none;
+        background-color:white;
+    }
+    #continuar{
+        margin-left: 8px;
+
+    }
+    .tamanoFlecha{
+        font-size: 30px;
+    }
+
+    #linea{
+        width: 5%;
+        background-color: white;
+    }
+    
+    #descuentoForm{
+        padding: 0px 20px;
+    }
+    
+}
