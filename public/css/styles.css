@@ -53,6 +53,10 @@ p.textos-mini{
     max-width: 100px;
 }
 
+#logo-img{
+    width: 100%;
+}
+
 #nav-mobile {
     align-items: center;
     display: flex;
@@ -63,8 +67,6 @@ p.textos-mini{
 
 #nav-carrito {
     width:20%;
-    text-align:right;
-    margin-right:1em;
 }
 
 #nav-desktop {
@@ -120,6 +122,38 @@ ul#menu li:hover{
 }
 
 /*Fin del codigo del Header*/
+
+/*Codigo footer*/
+
+#footer{
+    background-color: #282828;
+    width: 100%;
+}
+
+#redirects{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.textos-footer{
+    color: white;
+    text-decoration: none;
+}
+
+.textos-footer:hover{
+    cursor: pointer;
+}
+
+.descripcion-footer{
+    color: gray;
+    display: none;
+}
+
+/*Fin del codigo del Footer*/
 
 /*Estilos de INDEX*/
 
@@ -276,7 +310,7 @@ ul#menu li:hover{
 
 .vender-tus-obras {
     top: auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     padding-top: 50px;
@@ -329,14 +363,14 @@ ul#menu li:hover{
 
 #vender{
     text-align: right;
-    font-size: 10px;
+    font-size: 13px;
     color: #0d0d45;
     padding-top: 3px;
     padding-bottom: 1px;
     padding-left: 15px;
     padding-right: 15px;
     border: 0px;
-    
+    border-radius: 2px;  
 }
 
 
@@ -462,6 +496,25 @@ ul#menu li:hover{
 
     #boton-crear-cuenta{
         margin-top: 2em;
+    }
+
+    .categoria-contenedor-imagen{
+        box-shadow: none;
+        transition: all 450ms;
+    }
+
+    .categoria-contenedor-imagen:hover{
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 6px, rgb(255 255 255 / 20%) 2px 2px 2px, rgb(0 0 0 / 40%) 2px 2px 2px, rgb(0 0 0 / 30%) 4px 5px 3px, rgb(0 0 0 / 20%) 8px 8px 4px, rgb(0 0 0 / 10%) 10px 11px 6px, rgb(0 0 0 / 10%) 12px 14px 8px;
+    }
+
+    #redirects{
+        flex-direction: row;
+        height: 150px;
+    }
+
+    .descripcion-footer{
+        display: block;
+        font-size: 13px;
     }
 }
 
