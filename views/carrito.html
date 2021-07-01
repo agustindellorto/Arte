@@ -39,16 +39,22 @@
         </section>
     </header>
     <main id="carrito-de-compras-main">
-        <h1 id="carrito">Carrito de Compras</h1>
-        <div class="flexCompras">
+        <h1 id="titulo-carrito">Carrito de Compras</h1>
+        <div class="main-flex-compras">
             
-            <div class="compra1">
+            <section class="compra1">
             <div class="productoCarrito">
-                <img class="imagen" src="/img/detalle-pintura.jpg">
-                <p class="nombreObra">Nombre de la obra</p>
-                <p class="cruz">x</p>
-                <div class="precioArtista">
+                <div>
+                    <img class="imagen" src="/img/detalle-pintura.jpg">
+                </div>
+                <div class= "nombre-obra-artista">
+                    <p class="nombreObra">Nombre de la obra</p>
                     <p class="artista">Artista</p>
+                    
+                </div>
+                
+                <div class="precio-boton">
+                    <button type="submit" id="boton"><i class="fas fa-times"></i></button>
                     <p class="precio">$3000</p>
                 </div>
             </div>
@@ -66,32 +72,35 @@
                     </select>
                 </form>
             </div>
-            </div>
+        </section>
             <div id="linea"></div>
-            <div class="compra2">
+            <section class="compra2">
                 
                 <form action="/descuento" method="POST" id="descuentoForm" >
                     <p>
                     <label>¿Tienes un cupón de descuento o Gift Card?</label>
                     </p>
-                    <p>
+                    <p id="contenedor-text-cupon">
                         <input type="text" name="descuento" id="cupon">
                     </p>
                     <p>
-                    <button type="submit" id="boton">Ingresá el código</button>
+                    <button type="submit" id="boton-descuento">Ingresá el código</button>
                     </p>
                 </form>
                 
-                <h3>Total Compra:</h3>
-                <p>Subtotal</p>
-                <p>Costo de envío</p>
+                <h3 id="titulo-total-compra">Total Compra:</h3>
+                <p class="texto-envio">Subtotal</p>
+                <p class="texto-envio">Costo de envío</p>
                 <br>
-                <p>Total Compra</p>
+                <p class="texto-envio">Total Compra</p>
                 <button id="continuarCompra">Continuar</button>
-            </div>
+            </section>
         </div>
         <h3 class="totalCompra">Total:</h3>
-        <button id="finalizarCompra">Finalizar Compra</button>
+        <div id="boton-finalizar-compra">
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </div>
+        
         <br>
         <div id="anteFooter">
         <!--<a href="./galeria.html">--><button class="continuarComprando">
@@ -99,17 +108,27 @@
             <p id="continuar">Continuar comprando</p>
         </button>
         
-        <select>
+        <select id="ayuda">
             <option> ¿Necesitas ayuda? </option>
             
             </select>
         </div>
         
     </main>
-
+    <br>
     <footer>
-
-    </footer>
+        <section id="footer">
+           <nav id="footer-nav">
+               <ul id="redirects">
+                   <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-home"></i> Home</a><br><p class="descripcion-footer">Regresar al inicio</p></li>
+                   <li class="redirects-footer"><a href="/galeria.html" class="textos-footer"><i class="fas fa-paint-brush"></i> Galeria</a><br><p class="descripcion-footer">Visita miles de obras</p></li>
+                   <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-folder-plus"></i> Publicar Obras</a><br><p class="descripcion-footer">Vende tus obras con nosotros</p></li>
+                   <li class="redirects-footer"><a href="/login.html" class="textos-footer"><i class="fas fa-user"></i> Log In</a><br><p class="descripcion-footer">Ingresa a tu cuenta</p></li>
+                   <li class="redirects-footer"><a href="" class="textos-footer"><i class="fas fa-folder-open"></i> Categorias</a><br><p class="descripcion-footer">Busca arte de todo tipo</p></li>
+               </ul>
+           </nav>
+        </section>
+      </footer>
 </body>
 
 <html>
