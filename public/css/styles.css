@@ -12,6 +12,14 @@ Dentro de esta hoja se definen los estilos generales que afectan a todo el sitio
     font-family: 'Rubik', sans-serif;
 }
 
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+}
+
  /* Codido del Header*/
 
 header{

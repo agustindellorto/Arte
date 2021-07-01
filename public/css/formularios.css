@@ -1,0 +1,112 @@
+/* Paleta colores Apple
+Azul rgb(29,130,194) #1D82C2
+Naranja #FDAA41
+Coral/Rojizo #F95347
+Violeta #7F357E  rgb(127,53,126)
+Gris claro #F5F5F7 rgb(245,245,247)
+*/
+
+p.textos-mini{ 
+font-size: 0.5em;
+}
+
+.login-caja-ppal {
+  margin: auto;
+  padding-top:10px;
+  margin-top:2.7em;
+  width:90vw;
+  background-color:#F5F5F7 ;
+}
+
+.registro-ppal {
+margin: auto;
+width:90vw;
+background-color:#F5F5F7;
+padding: 3em 2em;
+}
+
+#titulo-login {
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.login-caja1 {
+   width: 90%;
+   margin: auto;
+   text-align: center;
+}
+
+#login-google, #boton-acceder, #boton-crear-cuenta {
+background-color:#1D82C2;
+border: none;
+padding: 8px 10px;
+text-align: center;
+width: 100%;
+color: white;
+}
+
+#login-form {
+    margin-bottom: 1em;
+    margin-top: 0px;
+}
+
+.login-field {
+    border:solid 1px #f5f4f2;
+    color: white;
+    width:100%;
+    display:block;
+    padding: 10px;
+    margin-bottom:0.5em;
+}
+
+.opcion-registrarse {
+    background-color: #1D82C2;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    margin-top: 3.5em;
+
+}
+
+.login-caja-ppal a {
+    color: inherit;
+}
+
+.login-caja-ppal a:hover {
+    color: inherit;
+}
+
+.opcion-registrarse-desktop {
+    display:none;
+}
+
+@media (min-width:769px) {
+    .opcion-registrarse-desktop {
+        display: block;
+        width:50%;
+        margin-top:6.5em;
+        margin-right: 3em;
+    }
+    .opcion-registrarse {
+        display: none;
+    }
+    .login-caja-ppal {
+        display: flex;
+        width:100vw;
+        justify-content: space-between;
+        background-color:white;
+    }
+    .login-caja1{
+        width:30%;
+    }
+
+    .registro-ppal {
+        width: 50vw;
+        margin: 3em 5em;
+        background: white;
+    }
+
+    #boton-crear-cuenta{
+        margin-top: 2em;
+    }
+}

@@ -207,8 +207,9 @@ main{
 
 
 
-/*media queries(dejar al final de la hoja de estilo)
+
 @media (min-width: 0px) and (max-width: 380px){
+
     #navBar{
         display: none;
     }
