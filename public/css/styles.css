@@ -15,23 +15,31 @@ Gris claro #F5F5F7 rgb(245,245,247)
     font-size: 14px;
     line-height: 1.3em;
     font-family: 'Open Sans', sans-serif;
-    color: #717170;
+}
+
+
+p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 4rem;
+    letter-spacing: 2em;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 p.textos-mini{ 
-    font-size: 0.5em;
+    font-size: 0.5rem;
 }
 
 
  /* Codido del Header*/
+
 
 #barra-navegacion {
     display: flex;
@@ -41,6 +49,8 @@ p.textos-mini{
     width: 100vw;
     margin: auto;
     text-align: center;
+    padding-left:3px;
+    padding-right: 3px;
     flex-wrap: nowrap;
     background-color: rgba(245,245,257,0.3);
     color: black;
@@ -159,10 +169,8 @@ ul#menu li:hover{
 
 /*Estilos de INDEX*/
 
-.revisar-c-agustin {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+main {
+    margin: auto;
     background-color: #f5f5f7;
 }
 
@@ -171,7 +179,7 @@ ul#menu li:hover{
     text-align: center;
     padding-bottom:30px;
     padding-top:30px;
-    margin-top:68px;
+    margin-top:80px;
     border: 1px solid black;
 }
 
@@ -224,7 +232,6 @@ html {
     color: black;
     position: relative;
     overflow: hidden;
-    font-size: 18px;
     text-align: center;
     padding-top: 1em;
     padding-left: 1em;
@@ -284,6 +291,7 @@ html {
 
 .categoria-contenedor-detalle-texto{
     font-family: 'Cormorant Garamond', serif;
+    color: #717170;
     padding-top: 0.3em;
     padding-right: 0.6em;
     padding-bottom: 0.3em;
@@ -341,6 +349,7 @@ html {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 30px;
@@ -716,6 +725,12 @@ html {
 
 
 @media (min-width: 1280px) {
+
+    #barra-navegacion {
+        max-width: 1280px;
+        margin:auto;
+    }
+
     body { 
         max-width: 1280px;
         margin: auto;
