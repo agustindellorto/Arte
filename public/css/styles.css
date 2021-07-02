@@ -14,7 +14,8 @@ Gris claro #F5F5F7 rgb(245,245,247)
     padding: 0;
     font-size: 14px;
     line-height: 1.3em;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    color: #717170;
 }
 
 h1{
@@ -41,11 +42,12 @@ p.textos-mini{
     margin: auto;
     text-align: center;
     flex-wrap: nowrap;
-    background-color: rgba(245,245,257,0.7);
+    background-color: rgba(245,245,257,0.3);
     color: black;
     position: fixed;
     z-index: 10;
     top: 0;
+    backdrop-filter: url(filters.svg#filter) blur(20px) saturate(160%);
 }
 
 #logo {
@@ -204,19 +206,22 @@ ul#menu li:hover{
 /*fin codigo iconos de inicio*/
 
 /*Categorias*/
-
+html {
+    scroll-behavior: smooth;
+  }
 
 .categorias {
     position: relative;
     margin-left: auto;
     margin: auto;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
 .categoria-barra{
+    color: black;
     position: relative;
     overflow: hidden;
     font-size: 18px;
@@ -225,7 +230,7 @@ ul#menu li:hover{
     padding-left: 1em;
     padding-bottom: 1em;
     width: 100%;
-    background-color: #fcfdfdb9;
+
 
 }
 
@@ -234,8 +239,8 @@ ul#menu li:hover{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    padding-bottom: 3.5em;
+    padding-top: 2.5em;
     width: 100%;
     background-image: radial-gradient(#0d0d4538, #0d0d4500);
     
@@ -244,37 +249,60 @@ ul#menu li:hover{
 
 #categoria-1{
     flex-direction: row-reverse;
+
 }
 #categoria-3{
     flex-direction: row-reverse;
 }
+
+
 #categoria-5{
     flex-direction: row-reverse;
+    
+}
+
+#categoria-6{
+    flex-direction: row-reverse;
+    
 }
 
 .categoria-contenedor-detalle{
-    text-align: center;
-    background-color: none;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-top: 20%;
+    background: linear-gradient(0.45turn,
+     rgb(245,245,247) 30%,
+     rgb(238, 238, 236) 45%);
 }
 
+.categoria-contenedor-detalle-6{
+    margin-top: 30%;
+    background: linear-gradient(0.45turn,
+     rgb(245,245,247) 10%,
+     rgb(238, 238, 236) 45%);
+}
+
+
+
 .categoria-contenedor-detalle-texto{
-    text-align: center;
-    font-size: 1.5em;
-    color: #6228ff;
-    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 0.3em;
+    padding-right: 0.6em;
+    padding-bottom: 0.3em;
+    padding-left: 0.6em;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    box-shadow:rgba(0, 0, 0, 0.2) 1px 1px 0px,
+    rgba(0, 0, 0, 0.1) 2px 2px 1px;
+    
 }
 
 .categoria-contenedor-imagen{
     border: rgb(20, 20, 20) 0.7em solid;
-    max-width: 60%;
+    width: 60%;
     margin-left: 1em;
     margin-right: 1em;
     box-shadow:
-    rgba(0, 0, 0, 0.2) 0px 0px 6px,
-    rgba(255, 255, 255, 0.2) 2px 2px 2px,
-    rgba(0, 0, 0, 0.4) 2px 2px 2px,
+    rgba(255, 255, 255, 0.05) 2px 2px 2px,
+    rgba(0, 0, 0, 0.6) 1px 1px 2px,
     rgba(0, 0, 0, 0.3) 4px 5px 3px,
     rgba(0, 0, 0, 0.2) 8px 8px 4px,
     rgba(0, 0, 0, 0.1) 10px 11px 6px,
@@ -489,11 +517,22 @@ ul#menu li:hover{
 
   /*Fin del codigo de Detalle de producto*/
 
+
+
+
+
+
+
+
+
+
+  
 /* MEDIA QUERIES */
 
 @media (min-width: 480px) {
 
 /*tablets y larger smartphones*/
+
 #descripcion-detalle-producto{
     display: flex;
     flex-direction: column;
@@ -558,24 +597,91 @@ ul#menu li:hover{
         margin-top: 2em;
     }
 
+
+    .categorias {
+        background-image: linear-gradient(0.88turn, #0d0d4538, #0d0d4500);
+    }
+
+
+    .categorias article{
+        padding-top: 7em;
+        width: 33%;
+        flex-direction: column-reverse;
+        background-image: none;
+        justify-content: flex-end;
+    }
+
+
+    #categoria-1{
+        flex-direction: column-reverse;
+    }
+
+    #categoria-2{
+        flex-direction: column-reverse;
+        margin-top: 8em;
+
+    }
+
+    #categoria-3{
+        flex-direction: column-reverse;
+        margin-top: -1em;
+    }
+
+    #categoria-4{
+    margin-right: -2em;
+    justify-content: flex-end;
+    margin-top: -6em;
+    }
+
+    #categoria-5{
+        order: 6;
+        margin-top: -3em;
+        margin-left: -16em;
+        flex-direction: column-reverse;
+    }
+
+    #categoria-6{
+        margin-left: 3em;
+        margin-top: 17em;
+    }
+    #categoria-contenedor-imagen-6 {
+        background-image: radial-gradient(#ff0000, #0d0d45);
+    }
+
+    .categoria-contenedor-detalle{
+        margin-top: 1.4em;
+    }
+
     .categoria-contenedor-imagen{
-        box-shadow: none;
-        transition: all 450ms;
+        width: 83%;
+        border: rgb(20, 20, 20) 0,7em solid;
+        transition: all 450ms ease-in-out;
     }
 
     .categoria-contenedor-imagen:hover{
-        box-shadow: rgb(0 0 0 / 20%) 0px 0px 6px, rgb(255 255 255 / 20%) 2px 2px 2px, rgb(0 0 0 / 40%) 2px 2px 2px, rgb(0 0 0 / 30%) 4px 5px 3px, rgb(0 0 0 / 20%) 8px 8px 4px, rgb(0 0 0 / 10%) 10px 11px 6px, rgb(0 0 0 / 10%) 12px 14px 8px;
+        transform: scale(1.05);
+        box-shadow:
+        rgba(255, 255, 255, 0.05) 2px 2px 2px,
+        rgba(0, 0, 0, 0.6) 1px 1px 2px,
+        rgba(25,25,25,0.2) 14px 14px 6px;
     }
+
+    .categoria-contenedor-imagen img{
+        border: white 0.8em solid;
+    }
+
+
+
+
+
+
+
 
     #redirects{
         flex-direction: row;
         height: 150px;
     }
 
-    .descripcion-footer{
-        display: block;
-        font-size: 13px;
-    }
      
     #img-detalle-producto{
         width: 30%;
@@ -606,7 +712,14 @@ ul#menu li:hover{
 }
 
 
+
+
+
 @media (min-width: 1280px) {
+    body { 
+        max-width: 1280px;
+        margin: auto;
+     }
 
 
 }
