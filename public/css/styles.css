@@ -13,28 +13,44 @@ Gris claro #F5F5F7 rgb(245,245,247)
     margin: 0;
     padding: 0;
     font-size: 14px;
-    line-height: 1.3em;
     font-family: 'Open Sans', sans-serif;
 }
 
 
-p {
-    font-size: 14px;
+.parrafos {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+
+.textos-mini{ 
+    font-size: 0.9em;
+    line-height: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.titulares-principales {
+    font-size: 2.1rem;
+    letter-spacing: 0.08em;
+    line-height: 1.4em;
+    font-weight: 800;
+}
+
+.titulares-secundarios {
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     line-height: 1.3em;
+    font-weight: 600;
+
 }
 
-h1{
-    font-size: 4rem;
-    letter-spacing: 2em;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-p.textos-mini{ 
-    font-size: 0.5rem;
+.titulares-terciarios {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    font-weight: 600;
 }
 
 
@@ -49,8 +65,8 @@ p.textos-mini{
     width: 100vw;
     margin: auto;
     text-align: center;
-    padding-left:3px;
-    padding-right: 3px;
+    padding-left:1em;
+    padding-right: 1em;
     flex-wrap: nowrap;
     background-color: rgba(245,245,257,0.3);
     color: black;
@@ -82,14 +98,15 @@ p.textos-mini{
 }
 
 #nav-desktop {
-    width: 40%;
+    width: 60%;
     display:none;
 }
 
 .nav-right-section {
     display:flex;
-    justify-content: right;
-    width:50%;
+    justify-content: flex-end;
+    width: 20%;
+    padding-right: 1.5em;
 }
 
 #botonBusqueda{
@@ -134,6 +151,34 @@ ul#menu li:hover{
 }
 
 /*Fin del codigo del Header*/
+
+/*Social media icons*/
+
+.caja-social-icons {
+display: flex;
+flex-direction: column;
+padding: 1em;
+justify-content: space-evenly;
+align-items: center;
+position: fixed;
+bottom: 200px;
+right:0;
+background-color: rgba(245,245,247,0.6);
+border-radius: 5px;
+}
+
+.icon-social-media {
+font-size:1.2rem;
+color: black;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+transition: color 45ms;
+}
+
+.icon-social-media:hover {
+    color: #F95347;
+    }
+
 
 /*Codigo footer*/
 
@@ -185,33 +230,48 @@ main {
 
 /*codigo iconos inicio*/
 #infoSeguridad{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 4em;
+    padding-bottom: 4em;
     display: flex;
     justify-content: space-evenly;
-    width: 95%;
+    width: 90%;
     margin:auto;
     border-bottom: 2px solid #ebebeb;
 }
 
 .items{
     width: 33%;
-    font-size:0.9em;
+    text-align: center;
 }
 
 .iconos{
     display: flex;
     justify-content: center;
-    font-size: 25px;
     margin-bottom:0.5em;
 }
 
-.textos{
-    text-align: center;
+.iconos-seguridad {
+    font-size: 2rem;
+
 }
 
 
 /*fin codigo iconos de inicio*/
+
+#main-row {
+    width:100vw;
+    text-align: center;
+}
+
+.titular-main-row {
+
+    font-size: 2.1rem;
+    letter-spacing: 0.08em;
+    line-height: 1.3em;
+    font-weight: 400;
+    padding: 1.4em 1.5em;
+
+}
 
 /*Categorias*/
 html {
@@ -235,7 +295,6 @@ html {
     text-align: center;
     padding-top: 1em;
     padding-left: 1em;
-    padding-bottom: 1em;
     width: 100%;
 
 
@@ -575,6 +634,14 @@ html {
         display:block;
     }
 
+    #nav-carrito {
+        width:10%;
+    }
+
+    .nav-right-section {
+        width: 50%;
+    }
+
     /*media queries formularios*/
 
     .opcion-registrarse-desktop {
@@ -606,6 +673,10 @@ html {
         margin-top: 2em;
     }
 
+    .titular-main-row {
+        width:70%;
+        margin: auto;
+     }
 
     .categorias {
         background-image: linear-gradient(0.88turn, #0d0d4538, #0d0d4500);
@@ -718,6 +789,7 @@ html {
     #agregar-a-carrito-mobile{
      display: none;
      }
+     
 }
 
 
@@ -736,5 +808,5 @@ html {
         margin: auto;
      }
 
-
+     
 }
