@@ -212,6 +212,26 @@ transition: color 45ms;
     display: none;
 }
 
+#logo-home-footer{
+    color: white;
+}
+
+#logo-galeria-footer{
+    color: white;
+}
+
+#logo-publicar-footer{
+    color: white;
+}
+
+#logo-login-footer{
+    color: white;
+}
+
+#logo-categorias-footer{
+    color: white;
+}
+
 /*Fin del codigo del Footer*/
 
 /*Estilos de INDEX*/
@@ -448,7 +468,7 @@ position: relative;
 }
 
 .vender-tus-obras {
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin: auto;
     padding-top: 50px;
@@ -851,13 +871,13 @@ margin: auto;
     }
 
 
-
-
-
-
     #redirects{
         flex-direction: row;
         height: 150px;
+    }
+
+    .descripcion-footer{
+        display: block;
     }
 
      
