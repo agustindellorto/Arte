@@ -1,11 +1,13 @@
-/* Estilos generales: parrafos, titulos principales y secundarios, header, footer.*/
 
-/* Paleta colores Apple
-Azul rgb(29,130,194) #1D82C2
-Naranja #FDAA41
-Coral/Rojizo #F95347
-Violeta #7F357E  rgb(127,53,126)
+/* Paleta colores.
+
 Gris claro #F5F5F7 rgb(245,245,247)
+Gris un poco mas oscuro #dcdde5
+Azul oscuro #272a3c
+Fucsia #9E0051
+Rosa viejo ##9b5d64
+Bordeaux ##6d0e0d
+Negro-azulado: tipografia #212125
 */
  
 * {
@@ -14,6 +16,7 @@ Gris claro #F5F5F7 rgb(245,245,247)
     padding: 0;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    color: #212125;
 }
 
 
@@ -69,7 +72,6 @@ Gris claro #F5F5F7 rgb(245,245,247)
     padding-right: 1em;
     flex-wrap: nowrap;
     background-color: rgba(245,245,257,0.3);
-    color: black;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -128,7 +130,7 @@ justify-content: space-evenly;
 
 ul#menu li a{
     text-decoration: none;
-    color: black;
+    color: #212125;
 }
 
 ul#menu li:hover{
@@ -146,7 +148,7 @@ ul#menu li:hover{
 }
 
 #carroHeader:hover{
-    color: gray;
+    color: #9E0051;
     cursor: pointer;
 }
 
@@ -176,14 +178,14 @@ transition: color 45ms;
 }
 
 .icon-social-media:hover {
-    color: #F95347;
+    color: #9E0051;
     }
 
 
 /*Codigo footer*/
 
 #footer{
-    background-color: #282828;
+    background-color: #272a3c;
     width: 100%;
 }
 
@@ -282,14 +284,12 @@ html {
     position: relative;
     margin-left: auto;
     margin: auto;
-    padding-bottom: 4em;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
 .categoria-barra{
-    color: black;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -329,6 +329,7 @@ html {
 
 #categoria-6{
     flex-direction: row-reverse;
+    padding-bottom: 5.5em;
     
 }
 
@@ -350,7 +351,7 @@ html {
 
 .categoria-contenedor-detalle-texto{
     font-family: 'Cormorant Garamond', serif;
-    color: #717170;
+    color: #272a3c;
     padding-top: 0.3em;
     padding-right: 0.6em;
     padding-bottom: 0.3em;
@@ -400,73 +401,111 @@ html {
 }
 
 
+/* Productos destacados */
+
+.linea {
+    background-color: #9b5d64;
+    height: 50px;
+    width: 2px;
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    z-index: 1;
+}
+
+
+.productos-destacados {
+width: 100vw;
+height: 400px;
+margin-top:2em;
+position: relative;
+}
+
+.productos-destacados h2 {
+    text-align: center;
+    padding: 0.5em 0px;
+}
+
+.productos-destacados-carrousel {
+    background-color: #F5F5F7;
+    width:80vw;
+    height:80%;
+    margin:auto;
+    border: 0.5px solid black;
+
+}
+
 /*Vendé tu obra con nosotros*/
 
+.linea2 {
+    background-color: #9b5d64;
+    height: 50px;
+    width: 2px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    z-index: 1;
+}
 
 .vender-tus-obras {
-    top: auto;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    width: 100vw;
+    position: relative;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 30px;
-    color: rgba(255, 255, 255, 0.75);
-    background-image: radial-gradient(#302575, #0d0d45);
+    background-color:#dcdde5;
 }
 
 .vender-tus-obras-contenedor-imagen{
     position: relative;
-    border: black 0.7em solid;
-    max-width: 40vw;
-    margin-left: 1em;
-    margin-right: 1em;
+    width:95%;
+    max-width: 400px;
+    margin: auto;
 }
 
 .vender-tus-obras-contenedor-imagen img{
-    border: white 1em solid;
     vertical-align: middle;
     width: 100%;
-    height: auto;
 }
 
 .vender-tus-obras-texto{
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 10px;
     display: block;
     text-align: left;
-    width: 30vw;
-    font-size: 1em;
-    color: #fff;
-    margin-left: 30px;    
+    margin: auto;
+    margin-top: 1.3rem;
+    width: 80%;
 }
 
-.vender-tus-obras-texto h3{
+.vender-tus-obras-texto h2{
     display: block;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.1em;
+    margin-bottom: 1.2rem;
+    font-size: 2em;
+    font-weight: 500;
+    color: #212125;
 }
 
 .vender-tus-obras-texto p{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 1.2rem;
     font-size: 16px;
+    color: #212125;
 }
 
 #vender{
     text-align: right;
-    font-size: 13px;
-    color: #0d0d45;
-    padding-top: 3px;
-    padding-bottom: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 1.1rem;
+    color: #F5F5F7;
+    background-color: #9b5d64;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 15px 40px;
+    margin-top: 1.2rem;
     border: 0px;
-    border-radius: 2px;  
+    border-radius: 3px;  
+}
+
+#vender:hover {
+    background-color: #9E0051;
 }
 
 
@@ -474,74 +513,118 @@ html {
 
 .login-caja-ppal {
     margin: auto;
-    margin-top: 66px;
+    margin-top: 7em;
     padding-top:10px;
     width:90vw;
     background-color:#F5F5F7 ;
   }
   
-  .registro-ppal {
+.registro-ppal {
   margin: auto;
   width:90vw;
   background-color:#F5F5F7;
   padding: 3em 2em;
   margin-top:66px;
-  }
+}
+
+.registro-ppal h2 {
+    padding: 1em 0em;
+    text-align: center;
+}
   
-  #titulo-login {
-      text-align: left;
-      margin-bottom: 1.5em;
-  }
+.login-caja1 h2 {
+text-align: left;
+padding: 1em 0em;
+font-size: 1.8em;
+}
+
+.login-caja1 p {
+padding: 1em 0em;
+}
   
-  .login-caja1 {
-     width: 90%;
-     margin: auto;
-     text-align: center;
-  }
+.login-caja1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
   
-  #login-google, #boton-acceder, #boton-crear-cuenta {
-  background-color:#1D82C2;
-  border: none;
-  padding: 8px 10px;
-  text-align: center;
-  width: 100%;
-  color: white;
-  }
+#login-google, #boton-acceder, #boton-crear-cuenta {
+    text-align: right;
+    font-size: 1.1rem;
+    color: #F5F5F7;
+    background-color: #212125;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    margin-top: 1.2rem;
+    border: 0px;
+    border-radius: 3px;  
+    text-align: center;
+    width: 100%;
+}
   
-  #login-form {
-      margin-bottom: 1em;
-      margin-top: 0px;
-  }
+#login-google:hover {
+background-color:#9E0051;
+}
+
+#boton-acceder:hover {
+background-color:#9E0051;
+}
+
+#boton-crear-cuenta:hover {
+background-color:#9E0051;
+}
+
+.login-caja-ppal a {
+    color: inherit;
+}
+
+.login-caja1 a:hover {
+text-decoration: underline;
+}
+
+#login-form {
+    margin-bottom: 1em;
+    margin-top: 0px;
+ }
   
-  .login-field {
-      border:solid 1px #f5f4f2;
-      color: white;
-      width:100%;
-      display:block;
-      padding: 10px;
-      margin-bottom:0.5em;
-  }
+.login-field {
+    border:solid 1px #f5f4f2;
+    color: white;
+    width:100%;
+    display:block;
+    padding: 10px;
+    margin-bottom:0.5em;
+}
   
-  .opcion-registrarse {
-      background-color: #1D82C2;
-      color: white;
-      padding: 3px;
-      text-align: center;
-      margin-top: 3.5em;
-  
+.opcion-registrarse {
+    text-align: center;
+    margin-top: 3.5em;
   }
+
+.opcion-registrarse p {
+    background-color: #9b5d64;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 3.5em;
+}  
   
-  .login-caja-ppal a {
-      color: inherit;
-  }
-  
-  .login-caja-ppal a:hover {
-      color: inherit;
-  }
-  
-  .opcion-registrarse-desktop {
-      display:none;
-  }
+.opcion-registrarse-desktop {
+    display:none;
+}
+
+.opcion-registrarse-desktop h2 {
+margin-bottom:1rem;
+}
+
+.opcion-registrarse-desktop p {
+    margin-bottom:1rem;
+}
+
+.opcion-registrarse-desktop a:hover {
+    color: #9E0051;
+}
 
   /*Codigo Detalle de Producto*/
 .detalle-producto{
@@ -621,8 +704,22 @@ html {
     display: none;
 }
 
+.vender-tus-obras {
+    display:flex;
+    justify-content: space-around;
 }
 
+.vender-tus-obras-contenedor-imagen{
+    width:45%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.vender-tus-obras-texto{
+width:45%;
+margin: auto;
+}
+}
 
 @media (min-width: 769px) {
 
@@ -665,8 +762,6 @@ html {
 
     .registro-ppal {
         width: 50vw;
-        margin: 3em 5em;
-        background: white;
     }
 
     #boton-crear-cuenta{
@@ -750,7 +845,10 @@ html {
         border: white 0.8em solid;
     }
 
-
+    .linea {
+        height:50px;
+        top: -54px;
+    }
 
 
 
