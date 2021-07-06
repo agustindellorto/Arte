@@ -1,14 +1,15 @@
 
 #carrito-de-compras-main{
-    margin-top: 66px;
-    padding-top: 10px;
-    padding-bottom:69px;
+    width: 100%;
+    margin-top: 4.7em;
+    padding-top: 0.7em;
+    padding-bottom: 7.95em;
     background-color: white;
 }
 
 .imagen{
-    margin: 10px;
-    width: 11vw;
+    margin: 0.5em;
+    width: 6rem;
     
 }
 .productoCarrito{
@@ -25,7 +26,7 @@
 }
 .nombreObra{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.5em;
 }
 
 .artista{
@@ -35,7 +36,7 @@
 .precio-boton{
     display: flex;
     width: 35%;
-    margin-top: 10px;
+    margin-top: 0.5em;
 }
 
 .precio{
@@ -47,7 +48,7 @@
     color: #F5F5F7;
     background-color: #212125;
     border: none;
-    padding: 5px 8px;
+    padding: 0.6em;
     text-align: center;
     border-radius: 3px;
 }
@@ -72,10 +73,8 @@
     display: none;
 }
 
-#seleccion{
-    display: none;
-}
-.compra2{
+
+#formulario-totalCompra{
     display: none;
 }
 #anteFooter{
@@ -83,8 +82,10 @@
 }
 
 .compra1{
-    margin-left: 20px;
+    width: 95%;
+    margin-left: 1.42em;
 }
+
 #texto-boton-descuento{
     font-size: 2px;
     letter-spacing: 0.05em;
@@ -92,31 +93,102 @@
     font-weight: 600;
 }
 
-#ayuda{
-        margin-right: 8px; 
-    }
 
-
-
-@media (min-width: 480px) {
-    
-    
-   
+#continuarCompra{
+    display: none;
+    color: #F5F5F7;
+    background-color: #212125;
+    border: none;
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%
 }
 
+#subt-envio-total{
+   
+    margin-left: 6%;
+    margin-top: 4%;
+    
+}
+
+.texto-envio{
+    padding-top: 20px;
+    padding-bottom: 5px;
+   }
+
+.titulo-total-compra{
+    padding-top: 1.3em;
+}
+
+#total-envio-precios{
+    display: flex;
+    justify-content: space-between;
+}
+#subt-envio-total-precios{
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
+.subt-costo{
+    padding-bottom: 1.5em;
+}
+
+#ayuda{
+    display: none;
+    margin-right: 0.6em; 
+}
+
+#seleccion{   
+margin-left: 2%;
+}
+
+#formulario-totalCompra2{
+    text-align: center;
+    padding-bottom: 2.5em;
+    padding-top: 2em;
+}
+#texto-boton-descuento2{
+    font-size: 2px;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+#contenedor-text-cupon2{
+    margin-top: 4px;
+}
+
+#cupon2{
+    border: solid 1px #f5f4f2;
+    color: white;
+    padding: 5px;
+}
+
+#boton-descuento2{
+    margin: 3px 72px;
+    color: #F5F5F7;
+    background-color: #212125;
+    padding: 0.4em 0.6em;
+    margin-top: 0.35em;
+    border: 0px;
+    border-radius: 3px;
+}
+
+
 @media (min-width:769px){
+    #descuento-mobile{
+        display: none
+    }
     
     #titulo-carrito{
         display: block;
         text-align: center;
-        padding-bottom: 40px;
-        padding-top: 5px;
+        padding-bottom: 1.5em;
+        padding-top: 0.5em;
         
     }
-    #seleccion{
-        display: block;
-        margin: 10px;
-    }
+ 
     #country{
         width: 25%;
     }
@@ -131,15 +203,14 @@
     }
     .compra1{
         width: 50%;
-        margin-left: 8px;
+        margin-left: 0.57em;
     }
     .compra2{
-        display: block;
         display: flex;
         flex-direction: column;
         width: 50%;
-        margin-right: 8px;
-        padding: 0 8px;
+        margin-right: 0.57em;
+        padding: 0 0.4em;
     }
     #contenedor-text-cupon{
         margin-top: 4px;
@@ -153,16 +224,21 @@
 
     #boton-descuento{
        
-
         margin: 3px 72px;
         color: #F5F5F7;
         background-color: #212125;
-        padding: 5px 8px;
-        margin-top: 5px;
+        padding: 0.4em 0.6em;
+        margin-top: 0.35em;
         border: 0px;
         border-radius: 3px;
    
-    
+    }
+    #boton-descuento:hover {
+        background-color: #9E0051;
+    }
+
+    #continuarCompra:hover {
+        background-color: #9E0051;
     }
     #boton{
        
@@ -174,14 +250,8 @@
         
     }
     #continuarCompra{
+        display: block;
         
-        color: #F5F5F7;
-        background-color: #212125;
-        border: none;
-        padding: 5px 8px;
-        text-align: center;
-        border-radius: 3px;
-        width: 100%
     }
     #anteFooter{
         display: block;
@@ -189,11 +259,12 @@
         justify-content: space-between;
         align-items: center;
         margin-left: 8px;
+        padding-top: 2em;
     }
 
     #ayuda{
         display: block;
-        margin-right: 8px; 
+      
     }
     .continuarComprando{
         display: flex;
@@ -223,14 +294,9 @@
         align-items: center;
     }
 
-    #titulo-total-compra{
-        padding-top: 15px;
-    }
     
-    .texto-envio{
-     padding-top: 20px;
-     padding-bottom: 5px;
-    }
+    
+    
     .seguir-comprando{
         display: flex;
         align-items: center;
@@ -242,9 +308,26 @@
         text-decoration: none;
         
       }
+    
     .precio-boton{
         display: flex;
         width: 32%
     }
+
+    #formulario-totalCompra{
+        display: block;
+    }
     
+    #formulario-totalCompra2{
+        display: none;
+    
+    }
+
+    #logos-medios-de-pago{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 0.5em;
+        margin-right: 8em;
+    }
 }
+

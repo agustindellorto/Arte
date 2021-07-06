@@ -44,9 +44,21 @@
     </header>
 
     <main id="carrito-de-compras-main">
+        <div id="formulario-totalCompra2">
+            <form action="/descuento" method="POST" id="descuentoForm" >
+                <p id="texto-boton-descuento2">
+                <label>¿Tienes un cupón de descuento o Gift Card?</label>
+                </p>
+                <p id="contenedor-text-cupon2">
+                    <input type="text" name="descuento" id="cupon2">
+                </p>
+                <p>
+                <button type="submit" id="boton-descuento2" class="parrafos">Ingresá el código</button>
+                </p>
+            </form>
+        </div>
         <h1 id="titulo-carrito" class="titulares-principales">Carrito de Compras</h1>
         <div class="main-flex-compras">
-            
             <section class="compra1">
             <div class="productoCarrito">
                 <div>
@@ -80,31 +92,42 @@
         </section>
             <div id="linea"></div>
             <section class="compra2">
-                
-                <form action="/descuento" method="POST" id="descuentoForm" >
-                    <p id="texto-boton-descuento" >
-                    <label>¿Tienes un cupón de descuento o Gift Card?</label>
-                    </p>
-                    <p id="contenedor-text-cupon">
-                        <input type="text" name="descuento" id="cupon">
-                    </p>
-                    <p>
-                    <button type="submit" id="boton-descuento" class="parrafos">Ingresá el código</button>
-                    </p>
-                </form>
-                
-                <h3 id="titulo-total-compra" class="titulares-terciarios">Total Compra:</h3>
-                <p class="texto-envio parrafos">Subtotal</p>
-                <p class="texto-envio parrafos">Costo de envío</p>
+                <div id="formulario-totalCompra">
+                    <form action="/descuento" method="POST" id="descuentoForm" >
+                        <p id="texto-boton-descuento" >
+                        <label>¿Tienes un cupón de descuento o Gift Card?</label>
+                        </p>
+                        <p id="contenedor-text-cupon">
+                            <input type="text" name="descuento" id="cupon">
+                        </p>
+                        <p>
+                        <button type="submit" id="boton-descuento" class="parrafos">Ingresá el código</button>
+                        </p>
+                    </form>
+                    
+                </div>
+                <div id="total-envio-precios">
+                    <div id="subt-envio-total">
+                        <p class="parrafos subt-costo">Subtotal</p>
+                        <p class="parrafos subt-costo">Costo de envío</p>
+                        <h3 class="titulo-total-compra titulares-terciarios">Total Compra:</h3>
+                    </div>
+                    <div id="subt-envio-total-precios">
+                        <p class="parrafos subt-costo">$3000</p>
+                        <p class="parrafos subt-costo">$600</p>
+                        <p class="parrafos titulo-total-compra">$3600</p>
+                    </div>
+                </div>
                 <br>
-                <p class="texto-envio parrafos">Total Compra</p>
+                
                 <button id="continuarCompra" class="parrafos">Continuar</button>
             </section>
         </div>
-        <h3 class="totalCompra parrafos">Total:</h3>
+        
         <div id="boton-finalizar-compra">
             <button id="finalizarCompra"class="parrafos">Finalizar Compra</button>
         </div>
+        
         
         <br>
         <div id="anteFooter">
