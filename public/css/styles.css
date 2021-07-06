@@ -75,7 +75,7 @@ Negro-azulado: tipografia #212125
     position: fixed;
     z-index: 10;
     top: 0;
-    backdrop-filter: url(filters.svg#filter) blur(20px) saturate(160%);
+    backdrop-filter: blur(20px) saturate(160%);
 }
 
 #logo {
@@ -296,9 +296,6 @@ main {
 }
 
 /*Categorias*/
-html {
-    scroll-behavior: smooth;
-  }
 
 .categorias {
     position: relative;
@@ -310,14 +307,14 @@ html {
 }
 
 .categoria-barra{
+    top: 2.3em;
+    letter-spacing: 0.02em;
+    color: #272a3c;
     position: relative;
     overflow: hidden;
     text-align: center;
     padding-top: 1em;
-    padding-left: 1em;
     width: 100%;
-
-
 }
 
 .categorias article{
@@ -328,14 +325,14 @@ html {
     padding-bottom: 3.5em;
     padding-top: 2.5em;
     width: 100%;
-    background-image: radial-gradient(#0d0d4538, #0d0d4500);
+    background-image: radial-gradient(#0d0d4500, #0d0d4538);
     
 
 }
 
 #categoria-1{
     flex-direction: row-reverse;
-
+    padding-top: 6em;
 }
 #categoria-3{
     flex-direction: row-reverse;
@@ -370,14 +367,11 @@ html {
 
 
 .categoria-contenedor-detalle-texto{
-    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9em;
+    font-weight: 500;
     color: #272a3c;
-    padding-top: 0.3em;
-    padding-right: 0.6em;
-    padding-bottom: 0.3em;
-    padding-left: 0.6em;
-    font-size: 1em;
-    letter-spacing: 0.05em;
+    padding: 0.4em;
+    letter-spacing: 0.3;
     box-shadow:rgba(0, 0, 0, 0.2) 1px 1px 0px,
     rgba(0, 0, 0, 0.1) 2px 2px 1px;
     
@@ -795,12 +789,14 @@ margin: auto;
 
     .categorias {
         background-image: linear-gradient(0.88turn, #0d0d4538, #0d0d4500);
+        align-items: center;
+    }
+    .categoria-barra{
+        top: 0;
     }
 
-
     .categorias article{
-        padding-top: 7em;
-        width: 33%;
+        width: calc(100% / 2);
         flex-direction: column-reverse;
         background-image: none;
         justify-content: flex-end;
@@ -808,39 +804,31 @@ margin: auto;
 
 
     #categoria-1{
+        margin: 0;
         flex-direction: column-reverse;
     }
 
     #categoria-2{
         flex-direction: column-reverse;
-        margin-top: 8em;
 
     }
 
     #categoria-3{
         flex-direction: column-reverse;
-        margin-top: -1em;
     }
 
     #categoria-4{
-    margin-right: -2em;
     justify-content: flex-end;
-    margin-top: -6em;
     }
 
     #categoria-5{
-        order: 6;
-        margin-top: -3em;
-        margin-left: -16em;
         flex-direction: column-reverse;
+        margin-right: 24%;
     }
 
     #categoria-6{
-        margin-left: 3em;
-        margin-top: 17em;
-    }
-    #categoria-contenedor-imagen-6 {
-        background-image: radial-gradient(#ff0000, #0d0d45);
+        width: 60%;
+        margin-left: 40%;
     }
 
     .categoria-contenedor-detalle{
@@ -925,6 +913,77 @@ margin: auto;
         max-width: 1280px;
         margin: auto;
      }
+
+     .categorias {
+        background-image: linear-gradient(0.88turn, #0d0d4538, #0d0d4500);
+    }
+
+
+    .categorias article{
+        padding-top: 7em;
+        width: calc(100%/3);
+        flex-direction: column-reverse;
+        background-image: none;
+        justify-content: flex-end;
+    }
+
+
+    #categoria-1{
+        flex-direction: column-reverse;
+    }
+
+    #categoria-2{
+        flex-direction: column-reverse;
+        margin-top: 8em;
+
+    }
+
+    #categoria-3{
+        flex-direction: column-reverse;
+        margin-top: -1em;
+    }
+
+    #categoria-4{
+        width: 40%;
+        margin-left: 3em;
+        justify-content: flex-end;
+    }
+
+    #categoria-5{
+        width: 40%;
+        margin-left: 2em;
+        margin-right: 2em;
+        flex-direction: column-reverse;
+    }
+
+    #categoria-6{
+        margin: 0;
+        width: 50%;
+        top: -3em;
+        margin-left: 40%;
+    }
+
+    .categoria-contenedor-detalle{
+        margin-top: 1.4em;
+    }
+
+    .categoria-contenedor-imagen{
+        width: 83%;
+        border: rgb(20, 20, 20) 0,7em solid;
+        transition: all 450ms ease-in-out;
+    }
+
+    .categoria-contenedor-imagen:hover{
+        transform: scale(1.05);
+        box-shadow:
+        rgba(255, 255, 255, 0.05) 2px 2px 2px,
+        rgba(0, 0, 0, 0.6) 1px 1px 2px,
+        rgba(25,25,25,0.2) 14px 14px 6px;
+    }
+
+    .categoria-contenedor-imagen img{
+        border: white 0.8em solid;
+    }
 
      
 }
