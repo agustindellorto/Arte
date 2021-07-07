@@ -35,9 +35,6 @@ app.get('/contact', (req,res) =>{
     res.sendFile(path.join(__dirname, './views/contact.html'));
 });
 
-app.get('/detalle_producto2', (req,res) =>{
-    res.sendFile(path.join(__dirname, './views/detalle_producto2.html'));
-});
 
 app.use(express.static(path.join(__dirname, './public')));
 
