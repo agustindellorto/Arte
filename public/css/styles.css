@@ -68,7 +68,7 @@ Negro-azulado: tipografia #212125
     width: 100vw;
     margin: auto;
     text-align: center;
-    padding-left:1em;
+    padding-left: 1em;
     padding-right: 1em;
     flex-wrap: nowrap;
     background-color: rgba(245,245,257,0.3);
@@ -76,8 +76,20 @@ Negro-azulado: tipografia #212125
     z-index: 10;
     top: 0;
     backdrop-filter: blur(20px) saturate(160%);
+    border-bottom: 1px solid #0000002c;
 }
-
+.header-background{
+    width: 100vw;
+    padding-top: 100px;
+    background: linear-gradient(0turn,
+    #f5f5f7 90%,
+    #272a3c 10%);
+}
+.header-background img{
+    vertical-align: middle;
+    width: 50%;
+    height: auto;
+}
 #logo {
     width:30%;
     max-width: 100px;
@@ -245,8 +257,6 @@ main {
     width: 100%;
     text-align: center;
     padding-bottom:30px;
-    padding-top:30px;
-    margin-top:80px;
     border: 1px solid black;
 }
 
@@ -621,47 +631,169 @@ margin-bottom:1rem;
     color: #9E0051;
 }
 
-  /*Codigo Detalle de Producto*/
-.detalle-producto{
-    margin-top: 75px;
-}
+/* PRODUCTO DETALLE */
 
 .producto{
-    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "producto-imagen"
+    "producto-info-detalle-1"
+    "producto-info-detalle-2"
+    "producto-info-detalle-3"
+    "producto-compra";
 }
-
-#img-detalle-producto{
-    width: 50%;
-    margin-left: 5px;
+.producto-imagen{
+    grid-area: producto-imagen;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
-
-#texto-detalle-producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.producto-imagen-principal{
+    width: 90vw;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-#detalles-superiores{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#descripcion-detalle-producto{
-    display: none;
-}
-
-#agregar-a-carrito-mobile{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+.producto-imagen-principal img{
+    vertical-align: middle;
     width: 100%;
-    margin-top: 5px;
+    height: auto;
+}
+.producto-imagenes-miniaturas{
+
 }
 
-  /*Fin del codigo de Detalle de producto*/
+.producto-info-detalle-1{
+    grid-area: producto-info-detalle-1;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.producto-info-detalle-1 h1{
+    font-size: 2em;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: -0.1em;
+
+}
+.producto-info-detalle-1 span{
+    font-size: 0.5em;
+    margin-left: 0.5em;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+.producto-info-detalle-1 h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #9b5d64;
+
+}
+.producto-info-detalle-2{
+    grid-area: producto-info-detalle-2;
+}
+.producto-info-detalle-list{
+
+}
+.producto-info-detalle-2 ul{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.producto-info-detalle-2 li{
+    width: auto;
+    list-style: none;
+    border-left: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.producto-info-detalle-list .titulo{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+
+}
+.producto-info-detalle-list .info{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+}
+.producto-info-detalle-3{
+    grid-area: producto-info-detalle-3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.producto-info-detalle-3 h1{
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.producto-info-detalle-3 p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+    margin-bottom: 0.5em;
+}
+
+.producto-compra{
+    grid-area: producto-compra;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #dcdde5;
+    border-radius: 10px;
+
+}
+.producto-compra-precio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.producto-compra-precio h1{
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.producto-compra h4{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.producto-botonera{
+
+}
+#boton-agregar-carrito{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
+    background-color: #9b5d64;
+    color: white;
+    font-size: 1.1em;
+    padding: 1em;
+    border: none;
+    border-radius: 3px;
+}
+#boton-agregar-carrito:hover{
+    background-color: #9E0051;
+}
+
+
+/* PRODUCTO DETALLE FIN*/
+
 
 
 
@@ -679,37 +811,15 @@ margin-bottom:1rem;
 
     /*tablets y larger smartphones*/
 
-    #descripcion-detalle-producto{
-        display: flex;
-        flex-direction: column;
-        height: 40%;
-        justify-content: space-evenly;
-    }
-
-    .boton-agregar-carrito{
-            background-color: black;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-    }
-
-    #agregar-a-carrito-mobile{
-        display: none;
-    }
-
     .vender-tus-obras {
         display:flex;
         justify-content: space-around;
     }
-
     .vender-tus-obras-contenedor-imagen{
         width:45%;
         max-width: 400px;
         margin: auto;
     }
-
     .vender-tus-obras-texto{
     width:45%;
     margin: auto;
@@ -903,19 +1013,27 @@ margin-bottom:1rem;
         border-color: white;
         border: white 1.5em solid;
     }
-
-
-
-
-
-     
-
+    .producto{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-column-gap: 10px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "producto-imagen producto-compra"
+        "producto-info-detalle-1 producto-compra"
+        "producto-info-detalle-2 producto-compra"
+        "producto-info-detalle-3 producto-compra"   
+    }
+    .producto-compra{
+        margin-top: 0;
+    }
     .linea {
         height:50px;
         top: -54px;
     }
-
-
     #redirects{
         flex-direction: row;
         height: 150px;

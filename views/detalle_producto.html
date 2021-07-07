@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
     
 </head>
+
+
+<!---->
+
+
 <body>
+
     <header>
         <section id="barra-navegacion">
 
@@ -39,40 +48,88 @@
             </div>
 
         </section>
+
     </header>
 
-    <main>
-    <section class="detalle-producto">
-        <div class="producto">
-      <img src="/img/detalle-pintura.jpg" id="img-detalle-producto">
-      &nbsp;
-      <div id="texto-detalle-producto">
-      <div id="detalles-superiores">    
-      <h2 class="producto-nombre">Nombre del producto</h2>
-      <p class="producto-tipo">Tipo de Obra</p>
-      <p class="producto-artista">Artista</p>
-      <h2 class="producto-precio">$20.000</h2>
-      <p class="producto-dimension">Tamaño: 30x30</p>
-    </div>
-    <div id="descripcion-detalle-producto">
-        <h3 class="producto-titulo-descripcion">Descripcion</h3>
-        <p class="producto-descripcion">Esta obra tiene 30 cm de alto y 30 cm de ancho, su precio es de $20.000 y su categoria es Abstracta</p>
-        <button class="boton-agregar-carrito">Agregar al Carrito</button>
-    </div>
-      </div>
-      </div>
-      <button id="agregar-a-carrito-mobile">Agregar al Carrito</button>
-    </section>
+    <!---->
 
-    <div class="caja-social-icons">
-        <a href="https:/facebook.com"><i class="fab fa-facebook-f icon-social-media"></i></a>
-        <a href="https://instagram.com"><i class="fab fa-instagram icon-social-media"></i></a>
-        <a href="htt[s://pinterest.com"><i class="fab fa-pinterest-p icon-social-media"></i></a>
-        <a href=""><i class="far fa-envelope icon-social-media"></i></a>
-    </div>
-    
+    <main>
+        <div class="header-background">
+
+        </div>
+        <section class="producto">
+            <div class="producto-imagen">
+                <div class="producto-imagen-principal">
+                    <img src="/img/Abstracto.jpeg" alt="Dibujo Mia Zavalia">
+                </div>
+                <div class="producto-imagenes-miniaturas">
+
+                </div>
+            </div>
+            <div class="producto-info-detalle-1">
+                <h1>Zaraza<span>2020</span></h1>
+                <h2>Menganito</h2>
+            </div>
+            <div class="producto-info-detalle-2">
+                    <ul class="producto-info-detalle-list">
+                        <li>
+                            <div class="titulo">
+                                Técnica
+                            </div>
+                            <div class="info">
+                                Óleo en tablero
+                            </div>
+                        </li>
+                        <li>
+                            <div class="titulo">
+                                Otros detalles
+                            </div>
+                            <div class="info">
+                                Obra sobre panel sintético.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="titulo">
+                                Dimensiones
+                            </div>
+                            <div class="info">
+                                64x55cm
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <div class="producto-info-detalle-3">
+            <h1>Sobre la obra</h1>
+                <p>Holland ha realizado una serie de cuadros con este tema de dos desnudos en sustitución de una bombilla. Él cuenta cómo es en respuesta a la queja de su esposa sobre su renuencia a hacer las tareas domésticas comunes de los "hombres", mostrando cómo las mujeres podían hacerlas.</p>
+            </div>
+            <div class="producto-compra">
+                <div class="producto-compra-precio">
+                    <h1>$40.000</h1>
+                </div>
+                <div>
+                    <h4>Envío y devolución gratis.</h4>
+                </div>
+                <div class="producto-botonera">
+                    <form action="/" method="get">
+                        <button type="submit" id="boton-agregar-carrito">Adquirir esta obra</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-
+    <footer>
+      <section id="footer">
+         <nav id="footer-nav">
+             <ul id="redirects">
+                 <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-home" id="logo-home-footer"></i> Home</a><br><p class="descripcion-footer">Regresar al inicio</p></li>
+                 <li class="redirects-footer"><a href="/galeria.html" class="textos-footer"><i class="fas fa-paint-brush" id="logo-galeria-footer"></i> Galeria</a><br><p class="descripcion-footer">Visita miles de obras</p></li>
+                 <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-folder-plus" id="logo-publicar-footer"></i> Publicar Obras</a><br><p class="descripcion-footer">Vende tus obras con nosotros</p></li>
+                 <li class="redirects-footer"><a href="/login.html" class="textos-footer"><i class="fas fa-user" id="logo-login-footer"></i> Log In</a><br><p class="descripcion-footer">Ingresa a tu cuenta</p></li>
+                 <li class="redirects-footer"><a href="" class="textos-footer"><i class="fas fa-folder-open" id="logo-categorias-footer"></i> Categorias</a><br><p class="descripcion-footer">Busca arte de todo tipo</p></li>
+             </ul>
+         </nav>
+      </section>
+    </footer>
 </body>
 </html>
