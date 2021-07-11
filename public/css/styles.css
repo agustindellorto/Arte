@@ -85,6 +85,7 @@ Negro-azulado: tipografia #212125
 #logo {
     width:30%;
     max-width: 100px;
+    -webkit-font-smoothing: antialiased;
 }
 
 #logo-img{
@@ -97,15 +98,18 @@ Negro-azulado: tipografia #212125
     width: 20%;
     justify-content: left;
     margin-left:1em;
+    -webkit-font-smoothing: antialiased;
 }
 
 #nav-carrito {
     width:20%;
+    -webkit-font-smoothing: antialiased;
 }
 
 #nav-desktop {
     width: 60%;
     display:none;
+    -webkit-font-smoothing: antialiased;
 }
 
 .nav-right-section {
@@ -113,12 +117,14 @@ Negro-azulado: tipografia #212125
     justify-content: flex-end;
     width: 20%;
     padding-right: 1.5em;
+    -webkit-font-smoothing: antialiased;
 }
 
 #botonBusqueda{
     border: none;
     padding-left: 1em;
     background-color: transparent;
+    -webkit-font-smoothing: antialiased;
 }
 
 #botonBusqueda:hover{
