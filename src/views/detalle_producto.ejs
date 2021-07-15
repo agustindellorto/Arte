@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+    <%- include('partials/head.ejs') %>
+
+
+<!---->
+
+
+<body>
+
+    <%- include('partials/header.ejs') %>
+
+    <!---->
+
+    <main>
+        <div class="header-background">
+
+        </div>
+        <section class="producto">
+            <div class="producto-imagen">
+                <div class="producto-imagen-principal">
+                    <img src="/img/Abstracto.jpeg" alt="Dibujo Mia Zavalia">
+                </div>
+                <div class="producto-imagenes-miniaturas">
+
+                </div>
+            </div>
+            <div class="producto-info-detalle-1">
+                <h1>Zaraza<span>2020</span></h1>
+                <h2>Menganito</h2>
+            </div>
+            <div class="producto-info-detalle-2">
+                    <ul class="producto-info-detalle-list">
+                        <li>
+                            <div class="titulo">
+                                Técnica
+                            </div>
+                            <div class="info">
+                                Óleo en tablero
+                            </div>
+                        </li>
+                        <li>
+                            <div class="titulo">
+                                Otros detalles
+                            </div>
+                            <div class="info">
+                                Obra sobre panel sintético.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="titulo">
+                                Dimensiones
+                            </div>
+                            <div class="info">
+                                64x55cm
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <div class="producto-info-detalle-3">
+            <h1>Sobre la obra</h1>
+                <p>Holland ha realizado una serie de cuadros con este tema de dos desnudos en sustitución de una bombilla. Él cuenta cómo es en respuesta a la queja de su esposa sobre su renuencia a hacer las tareas domésticas comunes de los "hombres", mostrando cómo las mujeres podían hacerlas.</p>
+            </div>
+            <div class="producto-compra">
+                <div class="producto-compra-precio">
+                    <h1>$40.000</h1>
+                </div>
+                <div>
+                    <h4>Envío y devolución gratis.</h4>
+                </div>
+                <div class="producto-botonera">
+                    <form action="/" method="get">
+                        <button type="submit" id="boton-agregar-carrito">Adquirir esta obra</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

@@ -1,54 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Grupo 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://kit.fontawesome.com/3b7de1f9d4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-</head>
-
+  <%- include('partials/head.ejs') %>
 
 <!---->
 
 
 <body>
 
-    <header>
-        <section id="barra-navegacion">
-
-            <div id="nav-mobile" class="nav-left-section"> 
-                <p id="menuHamburguesa"><i class="fas fa-bars"></i></p>
-                <button type="submit" id="botonBusqueda"><i class="fas fa-search"></i></button>
-            </div>
-
-            <a href="/" id="logo"><img id="logo-img" src="/img/logo-art.png" ></a>
-
-            <div class="nav-right-section">
-                <nav id="nav-desktop">
-                    <ul id="menu">
-                            <li class="shop-online"><a href="./galeria.html">Obras</a></li>
-                            <li class="about"><a href="./about.html">Artistas</a></li>
-                            <li class="contact"><a href="./contact.html">Contacto</a></li>
-                            <li class="login"><a href="./login.html">Ingresá</a></li>
-                    </ul>
-                </nav>
-
-                <div id="nav-carrito">
-                    <a href="./carrito.html"><i class="fas fa-shopping-cart" id="carroHeader"></i></a>
-                </div>
-            </div>
-
-        </section>
-
-    </header>
+  <%- include('partials/header.ejs') %>
 
     <!---->
 
@@ -65,21 +25,21 @@
                 <img src="/img/slide1-carrousel-main.jpg" class="d-block w-100 imagen-carrousel" alt="...">
                 <div class="carrousel-texto">
                   <p class="parrafos-carrousel">Descubre el universo creativo de artistas independientes.</p>
-                  <a href="galeria.html" class="botonCTA">Explorar</a>
+                  <a href="galeria" class="botonCTA">Explorar</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="/img/slide2-carrousel-main.jpg" class="d-block w-100 imagen-carrousel" alt="...">
                 <div class="carrousel-texto">
                   <p class="parrafos-carrousel">Descubra el universo creativo de nuestros artistas.</p>
-                  <a href="galeria.html" class="botonCTA">Explorar</a>
+                  <a href="galeria" class="botonCTA">Explorar</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="/img/slide3-car-main.jpg" class="d-block w-100 imagen-carrousel" alt="...">
                 <div class="carrousel-texto">
                   <p class="parrafos-carrousel">Some representative placeholder content for the third slide.</p>
-                  <a href="galeria.html" class="botonCTA">Ver categorias</a>
+                  <a href="galeria" class="botonCTA">Ver categorias</a>
                 </div>
               </div>
             </div>
@@ -229,12 +189,7 @@
 
          <!---->
 
-        <div class="caja-social-icons">
-            <a href="https:/facebook.com"><i class="fab fa-facebook-f icon-social-media"></i></a>
-            <a href="https://instagram.com"><i class="fab fa-instagram icon-social-media"></i></a>
-            <a href="htt[s://pinterest.com"><i class="fab fa-pinterest-p icon-social-media"></i></a>
-            <a href=""><i class="far fa-envelope icon-social-media"></i></a>
-        </div>
+        <%- include('partials/caja-social') %>
 
         <!---->
         
@@ -249,19 +204,8 @@
 
     </main>
 
-    <footer>
-      <section id="footer">
-         <nav id="footer-nav">
-             <ul id="redirects">
-                 <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-home" id="logo-home-footer"></i> Home</a><br><p class="descripcion-footer">Regresar al inicio</p></li>
-                 <li class="redirects-footer"><a href="/galeria.html" class="textos-footer"><i class="fas fa-paint-brush" id="logo-galeria-footer"></i> Galeria</a><br><p class="descripcion-footer">Visita miles de obras</p></li>
-                 <li class="redirects-footer"><a href="/" class="textos-footer"><i class="fas fa-folder-plus" id="logo-publicar-footer"></i> Publicar Obras</a><br><p class="descripcion-footer">Vende tus obras con nosotros</p></li>
-                 <li class="redirects-footer"><a href="/login.html" class="textos-footer"><i class="fas fa-user" id="logo-login-footer"></i> Log In</a><br><p class="descripcion-footer">Ingresa a tu cuenta</p></li>
-                 <li class="redirects-footer"><a href="" class="textos-footer"><i class="fas fa-folder-open" id="logo-categorias-footer"></i> Categorias</a><br><p class="descripcion-footer">Busca arte de todo tipo</p></li>
-             </ul>
-         </nav>
-      </section>
-    </footer>
+    <%- include('partials/footer.ejs') %>
+
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include('partials/head.ejs') %>
+
+<body>
+
+   <%- include('partials/header.ejs') %>
+
+    <main>
+        <section class="registro-ppal">
+            <h2 class="titulares-secundarios">Completá tus datos.</h2>
+            <form action="./" id="register-form" method="POST">
+                <div class="form-section">
+                    <input type="text" name="nombre" class="login-field" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-section">
+                    <input type="text" name="usuario" class="login-field" placeholder="Nombre de Usuario">
+                </div>
+                <div class="form-section">
+                    <input type="email" name="email" class="login-field" placeholder="Email">
+                </div>
+                <div class="form-section">
+                    <input type="password" name="password" class="login-field" placeholder="Contraseña">
+                </div>
+                <div class="form-section">
+                    <input type="password" name="password" class="login-field" placeholder="Confirmar contraseña">
+                </div>
+                <div class="form-section">
+                    <a href="./index"><button type="submit" id="boton-crear-cuenta">Crear cuenta</button></a>
+                </div>
+            </form>
+        </section>
+
+        <%- include('partials/caja-social') %>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
