@@ -20,8 +20,5 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1"
-  },
-  "engines": {
-    "node": "8.9.3"
   }
 }
