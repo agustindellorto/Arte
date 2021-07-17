@@ -3,29 +3,22 @@ const path = require('path');
 
 const app = express();
 
-const routes = require('./routes/routes')
+const rutasMain = require('./routes/main');
+const rutasProductos = require('./routes/productos');
+const rutasUsuarios = require('./routes/usuarios');
+const rutasCarrito = require('./routes/carrito');
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
-app.use('/', routes)
+app.use('/', rutasMain);
 
-app.use('/detalle_producto', routes)
+app.use('/galeria', rutasProductos);
 
-app.use('/carrito', routes)
+app.use('/carrito', rutasCarrito);
 
-app.use('/login', routes)
-
-app.use('/registro', routes)
-
-app.use('/about', routes)
-
-app.use('/galeria', routes)
-
-app.use('/contact', routes)
+app.use('/ingresar', rutasUsuarios);  /* Falta desarrollar cuando profundizemos algunos conceptos*/
 
 app.use(express.static(path.join(__dirname, '../public')));
-
-app.use(express.static(path.join(__dirname, './views')));  
 
 app.listen(process.env.PORT || 3000, () => {
 console.log("Servidor corriendo");
