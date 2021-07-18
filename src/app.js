@@ -16,7 +16,7 @@ app.use('/galeria', rutasProductos);
 
 app.use('/carrito', rutasCarrito);
 
-app.use('/ingresar', rutasUsuarios);  /* Falta desarrollar cuando profundizemos algunos conceptos*/
+app.use('/user', rutasUsuarios);  /* Falta desarrollar cuando profundizemos algunos conceptos*/
 
 app.use(express.static(path.join(__dirname, '../public')));
 
