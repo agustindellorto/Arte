@@ -10,13 +10,71 @@
     <%- include('partials/header.ejs') %>
     </header>
     
-    <main>
-        
-        <h1 class=titulares-principales>Crear producto</h1>
-   
+    <main>       
+        <section class="section-crear-producto">
 
-        <%- include('partials/caja-social') %>
+            <h2 class="titulares-secundarios">Publicar Obra</h2>
+
+            <form action="/crear_producto" id="crear-producto-form" method="POST">
+
+                <div class="crear-producto">
+                    <label for="nombre">Nombre de la obra</label>
+                    <input type="text" name="nombre" class="crear-producto-field" placeholder="Nombre de la obra">
+                </div>
+                
+                <div class="crear-producto">
+                    <label for="fecha-creacion">Fecha de Creación</label>
+                    <input type="date" name="fecha-creacion" class="crear-producto-field" >
+                </div>
+ 
+                               
+                <div class="crear-producto">
+                    <label for="medio">Medio</label>
+                    <select name="medio" class="crear-producto-field">
+                        <option>Pintura</option>
+                        <option>Escultura</option>
+                        <option>Fotografía</option>
+                        <option>Dibujo</option>
+                        <option>Textil</option>
+                        <option>Otros medios</option>
+                    </select>
+                </div>
+
+                <div class="crear-producto">
+                    <label for="tema">Temática</label>
+                    <select name="tema" class="crear-producto-field">
+                        <option>Animales</option>
+                        <option>Autoretrato</option>
+                        <option>Historia</option>
+                        <option>Retrato</option>
+                        <option>Urbano</option>
+                        <option>Paisajes</option>
+                        <option>Naturaleza</option>
+                        <option>Desnudo</option>
+                    </select>
+                </div>
+                
+                <div class="crear-producto">
+                    <label for="tecnica">Técnica</label>
+                    <select name="tecnica" class="crear-producto-field">
+                        <option>Tinta</option>
+                        <option>Tiza</option>
+                        <option>Tiza</option>
+                        <option>Graffiti</option>
+                        <option>Carbón</option>
+                        <option>Tinta</option>
+                    </select>
+                </div>
+
+                <div class="crear-producto">
+                    <label for="precio">Nombre de la obra</label>
+                    <input type="number" name="precio" class="crear-producto-field" placeholder="Precio de la obra">
+                </div>
+
+            </form>
             
+        </section>
+
     </main>  
     
     <footer>
