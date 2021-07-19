@@ -13,13 +13,13 @@
     <main>       
         <section class="section-crear-producto">
 
-            <h2 class="titulares-secundarios">Publicar Obra</h2>
+            <h2 class="section-crear-producto-encabezado titulares-secundarios">Publicar Obra</h2>
 
             <form action="/crear_producto" id="crear-producto-form" method="POST">
 
                 <div class="crear-producto">
                     <label for="nombre">Nombre de la obra</label>
-                    <input type="text" name="nombre" class="crear-producto-field" placeholder="Nombre de la obra">
+                    <input type="text" name="nombre" class="crear-producto-field">
                 </div>
                 
                 <div class="crear-producto">
@@ -53,24 +53,24 @@
                         <option>Desnudo</option>
                     </select>
                 </div>
+                <div class="crear-producto">
+                    <h3>Dimensiones</h3>
+                </div>
+
+                <label for="obra-dimensiones-ancho">ancho</label>
+                <input type="number" name="obra-dimensiones-ancho" class="crear-producto-field" >
+
+                <label for="obra-dimensiones-alto">ancho</label>
+                <input type="number" name="obra-dimensiones-alto" class="crear-producto-field" >
+
+
+
+
+                <div class="crear-producto">
+                    <label for="precio">Precio de la obra</label>
+                    <input type="number" name="precio" class="crear-producto-field" placeholder=>
+                </div>
                 
-                <div class="crear-producto">
-                    <label for="tecnica">Técnica</label>
-                    <select name="tecnica" class="crear-producto-field">
-                        <option>Tinta</option>
-                        <option>Tiza</option>
-                        <option>Tiza</option>
-                        <option>Graffiti</option>
-                        <option>Carbón</option>
-                        <option>Tinta</option>
-                    </select>
-                </div>
-
-                <div class="crear-producto">
-                    <label for="precio">Nombre de la obra</label>
-                    <input type="number" name="precio" class="crear-producto-field" placeholder="Precio de la obra">
-                </div>
-
             </form>
             
         </section>
