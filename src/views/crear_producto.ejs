@@ -19,18 +19,18 @@
 
                 <div class="crear-producto">
                     <label for="nombre">Nombre de la obra</label>
-                    <input type="text" name="nombre" class="crear-producto-field">
+                    <input type="text" name="nombre" class="crear-producto-field" required>
                 </div>
                 
                 <div class="crear-producto">
                     <label for="fecha-creacion">Fecha de Creación</label>
-                    <input type="date" name="fecha-creacion" class="crear-producto-field" >
+                    <input type="date" name="fecha-creacion" class="crear-producto-field"  required>
                 </div>
  
                                
                 <div class="crear-producto">
                     <label for="medio">Medio</label>
-                    <select name="medio" class="crear-producto-field">
+                    <select name="medio" class="crear-producto-field"  required>
                         <option>Pintura</option>
                         <option>Escultura</option>
                         <option>Fotografía</option>
@@ -42,7 +42,7 @@
 
                 <div class="crear-producto">
                     <label for="tema">Temática</label>
-                    <select name="tema" class="crear-producto-field">
+                    <select name="tema" class="crear-producto-field"  required>
                         <option>Animales</option>
                         <option>Autoretrato</option>
                         <option>Historia</option>
@@ -53,24 +53,42 @@
                         <option>Desnudo</option>
                     </select>
                 </div>
-                <div class="crear-producto">
-                    <h3>Dimensiones</h3>
+
+                <h3>Dimensiones  <span>(centímetros)</span></h3>
+
+                <div class="crear-producto crear-producto-dimensiones">
+                    
+                    <div>
+                        <label for="ancho">ancho</label>
+                        <input type="number" name="ancho" class="crear-producto-field"  required>
+                    </div>
+                    <div>
+                        <label for="alto">alto</label>
+                        <input type="number" name="alto" class="crear-producto-field"  required>
+                    </div>
+                    <div>
+                        <label for="profundidad">profundidad</label>
+                         <input type="number" name="profundidad" class="crear-producto-field"  required>
+                    </div>
+                    
+                 </div>
+
+                <div class="crear-producto crear-producto-fotos">
+                    <label for="fotos">Fotos</label>
+                    <input type="file" name="fotos" class="crear-producto-field"  multiple accept=".png, .jpg, .jpeg" required>
                 </div>
-
-                <label for="obra-dimensiones-ancho">ancho</label>
-                <input type="number" name="obra-dimensiones-ancho" class="crear-producto-field" >
-
-                <label for="obra-dimensiones-alto">ancho</label>
-                <input type="number" name="obra-dimensiones-alto" class="crear-producto-field" >
-
-
-
-
                 <div class="crear-producto">
                     <label for="precio">Precio de la obra</label>
                     <input type="number" name="precio" class="crear-producto-field" placeholder=>
                 </div>
-                
+                <div class="crearproducto crear-producto-botonera">
+                    <label for="precio">Precio de la obra</label>
+                    <input type="submit" class="crear-producto-field" value="Subir obra">
+                    <input type="reset" class="crear-producto-field" value="Borrar formulario">
+
+
+
+                </div>
             </form>
             
         </section>
