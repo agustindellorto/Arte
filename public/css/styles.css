@@ -682,6 +682,8 @@ margin-bottom:1rem;
 
 
 .section-crear-producto{
+    position: relative;
+    max-width: 769px;
     width: 90vw;
     margin-top: 5em;;
     margin-left: auto;
@@ -713,17 +715,26 @@ margin-bottom:1rem;
     display: flex;
     justify-content: space-between;
 }
+.crear-producto-titulos-secuendarios{
+    width: 100%;
+}
 
-.crear-producto-dimensiones div{
-    width: 30%;
+.crear-producto-dimensiones-obejeto{
+    width: 25%;
 }
 
 
 
 .crear-producto input, select, option{
-    color: #dcdde5;
+    color: #292929;
     border: none;
     border-radius: 3px;
+}
+
+.crear-producto-botonera{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
 }
 
 
