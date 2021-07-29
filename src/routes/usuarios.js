@@ -7,6 +7,12 @@ router.get('/ingresar', usersController.login);
 
 router.get('/crear_cuenta', usersController.register);
 
-router.get('/mi_perfil', usersController.perfilUsuario);
+router.post('/crear_cuenta', usersController.store);
+
+router.get('/mi_perfil/:id', usersController.perfilUsuario); //renderiza perfil de usuario con identificador
+
+router.get('/mi_perfil/:id/edit', usersController.edit); // mostrar formulario de edicion que trae datos del usuario
+
+router.put('/mi_perfil/:id/edit', usersController.editStore); //guarda info de la edicion de perfil.
 
 module.exports= router;

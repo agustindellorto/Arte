@@ -6,10 +6,17 @@ const productosController = require('../controllers/productosController');
 
 router.get ('/', productosController.galeria);
 
-router.get ('/detalle_producto/:id', productosController.detalleProducto);
+router.get ('/detalle_producto/:id', productosController.detail);
 
-router.get ('/crear_producto', productosController.crearProducto);
+router.get ('/crear_producto', productosController.createProduct);
 
-router.get ('/editar_producto', productosController.editarProducto);
+router.post ('/crear_producto', productosController.storeProduct);
+
+router.get ('/editar_producto/:id', productosController.editProduct);
+
+router.put ('/editar_producto/:id', productosController.editStore);
+
+router.delete('/:id', productosController.delete);
+
 
 module.exports = router;
