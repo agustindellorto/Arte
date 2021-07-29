@@ -11,8 +11,8 @@ router.post('/crear_cuenta', usersController.store);
 
 router.get('/mi_perfil/:id', usersController.perfilUsuario); //renderiza perfil de usuario con identificador
 
-router.get('/mi_perfil/:id/edit', usersController.edit); // mostrar formulario de edicion que trae datos del usuario
+router.get('/mi_perfil/:id/edit', usersController.edit); // mostrar formulario de edicion que trae datos del usuario. No necesario para esta entrega. 
 
-router.put('/mi_perfil/:id/edit', usersController.editStore); //guarda info de la edicion de perfil.
+router.put('/mi_perfil/:id/edit', usersController.editStore); //guarda info de la edicion de perfil. No necesario para esta entrega.
 
 module.exports= router;
