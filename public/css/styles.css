@@ -904,7 +904,9 @@ margin-bottom:1rem;
 /* PRODUCTO DETALLE FIN*/
 
 
-
+.galeria{
+    position: relative;
+}
 
 
 
