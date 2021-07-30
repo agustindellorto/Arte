@@ -22,11 +22,45 @@ let controller = {
     },
 
     editProduct: (req, res) => {
-        res.render('editar_producto'); /* falta poner la logica para traer el formulario con los datos de "x" producto a editar*/
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        let id = req.params.id;
+		let obraId;
+
+		for (let obra of products){
+			if (id==obra.id){
+				obraId=obra;
+			}
+		}
+        
+		
+        res.render('editar_producto',{obraAEditar: obraId}); 
     },
 
     editStore: (req, res) => {
-        console.log("Aca va la logica guardar edicion de producto en el json");
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        let id = req.params.id;
+        console.log("datos:",req.body);
+
+/*
+		for (let obra of products){
+			if (id==obra.id){
+				obra.name= req.body.name;
+				obra.artist= req.body.artist;
+				obra.medium= req.body.medium;
+				obra.category= req.body.category;
+				obra.description= req.body.description;
+                obra.size= req.body.size;
+                obra.price= req.body.price;
+                obra.discount= req.body.discount;
+				
+			}
+		}
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,' '));
+
+		res.redirect('/');*/
     },
 
     delete: (req, res) => {
