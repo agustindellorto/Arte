@@ -11,8 +11,30 @@ let controller = {
         res.render('registro');
     },
     store: (req, res) => {
-        console.log("Aca va la logica de crear usuario en el archivoJson");
-    },
+
+        let idNuevo=0;
+
+        for (let user of users) {
+            if(idNuevo < user.id) {
+                idNuevo = user.id;
+            }
+        }
+        idNuevo++;
+
+        users.push({
+                id: idNuevo,
+                user_name: req.body.usuario,
+                full_name: req.body.nombre,
+                email: req.body.email,
+                password: req.body.password,
+                img: null
+            });
+            
+            fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
+            
+
+            res.redirect('/');
+        },
 
     perfilUsuario: (req, res) => {
         let idUser = req.params.id;
