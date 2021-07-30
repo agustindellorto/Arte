@@ -1,7 +1,13 @@
+const path = require('path');
+const fs = require('fs');
+const productsFilePath = path.join(__dirname, '../database/products.json');
+
 
 let controller = {
+
     galeria: (req, res)=>{
-        res.render('galeria');  /*Conectar con archivoJson, enviar como variable el array de productos y hacer un for en la vista para mostrarlos todos */
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('galeria', {productos: products})
     },
     detail: (req, res)=>{   /* faltaria conectar con archivoJson para terminar esto*/
         let idObra = req.params.id;

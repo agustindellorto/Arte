@@ -11,14 +11,24 @@
     </header>
     
     <main>
- 
-   <!-- Entiendo que aca iria logica Javascript. for conectado con la base de datos que muestra el array productos --> 
-        <section
+        <section class="galeria">
+             <%- include('partials/caja-social') %>
 
-
-
-        <%- include('partials/caja-social') %>
-            
+            <% for(product of productos) { %>
+                <article class="galeria-producto-articulo"> 
+                    <a href="/galeria/detalle_producto/<%=product.id %>" class="galeria-producto">
+                        <div class="galeria-producto-imagen">
+                            <img src="/img/<%=product.img %>" alt="<%=product.name%>"">
+                        </div>
+                        <div class="galeria-producto-detalle">
+                            <h2 class="galeria-producto-detalle-price">$<%=product.price %></h2>
+                            <h3 class="galeria-producto-detalle-name"><%=product.name %></h3>
+                            <h4 class="galeria-producto-detalle-size"><%=product.size %></h4>
+                        </div>
+                    </a> 
+                </article>
+             <% } %>
+        </section>
     </main>  
     
     <footer>
