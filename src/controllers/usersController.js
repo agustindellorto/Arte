@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const usersFilePath = path.join(__dirname, '../database/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const {validationResult} = require('express-validator');
 
 let controller = {
     login: (req, res)=>{
@@ -12,28 +13,35 @@ let controller = {
     },
     store: (req, res) => {
 
-        let idNuevo=0;
+        let errors = validationResult(req);
 
-        for (let user of users) {
-            if(idNuevo < user.id) {
-                idNuevo = user.id;
+         if (errors.isEmpty()) {
+            let idNuevo=0;
+            for (let user of users) {
+                if(idNuevo < user.id) {
+                    idNuevo = user.id;
+                }
             }
-        }
-        idNuevo++;
+            idNuevo++;
 
-        users.push({
-                id: idNuevo,
-                user_name: req.body.usuario,
-                full_name: req.body.nombre,
-                email: req.body.email,
-                password: req.body.password,
-                img: null
-            });
-            
-            fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-            
+            users.push({
+                    id: idNuevo,
+                    user_name: req.body.usuario,
+                    full_name: req.body.nombre,
+                    email: req.body.email,
+                    password: req.body.password,
+                    img: null
+                });
+                
+                fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
+                
 
-            res.redirect('/');
+                res.redirect('/');
+            } else {
+                let user= req.body;
+                res.render('registro', { errors: errors.array(), old: user });
+            }
+        
         },
 
     perfilUsuario: (req, res) => {

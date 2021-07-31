@@ -246,5 +246,13 @@
   "email": "bmartinez@hotmail.com",
   "password": "google50",
   "img": null
+ },
+ {
+  "id": 32,
+  "user_name": "mcgrande",
+  "full_name": "Marcos Grande",
+  "email": "mgrande@hotmail.com",
+  "password": "mcgrande",
+  "img": null
  }
 ]
