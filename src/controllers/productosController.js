@@ -1,17 +1,29 @@
 const path = require('path');
 const fs = require('fs');
-const productsFilePath = path.join(__dirname, '../database/products.json');
+
 
 
 let controller = {
 
     galeria: (req, res)=>{
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         res.render('galeria', {productos: products})
     },
     detail: (req, res)=>{   /* faltaria conectar con archivoJson para terminar esto*/
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        
         let idObra = req.params.id;
-        res.render('detalle_producto');
+        let productoEncontrado = {};
+
+        for (let product of products) {
+            if(product.id == idObra){
+                productoEncontrado = product;
+            }
+        }
+
+        res.render('detalle_producto', {product : productoEncontrado});
     },
     createProduct: (req, res) => {
         res.render('crear_producto');
@@ -22,7 +34,8 @@ let controller = {
     },
 
     editProduct: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
         let id = req.params.id;
 		let obraId;
@@ -38,7 +51,8 @@ let controller = {
     },
 
     editStore: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
         let id = req.params.id;
         console.log("datos:",req.body);
