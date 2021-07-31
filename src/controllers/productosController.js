@@ -22,6 +22,7 @@ let controller = {
                 productoEncontrado = product;
             }
         }
+        console.log(productoEncontrado.)
 
         res.render('detalle_producto', {product : productoEncontrado});
     },
