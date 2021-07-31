@@ -14,6 +14,8 @@
         <section class="galeria">
              <%- include('partials/caja-social') %>
 
+            
+
             <% for(product of productos) { %>
                 <article class="galeria-producto-articulo"> 
                     <a href="/galeria/detalle_producto/<%=product.id %>" class="galeria-producto">
@@ -22,8 +24,9 @@
                         </div>
                         <div class="galeria-producto-detalle">
                             <h2 class="galeria-producto-detalle-price">$<%=product.price %></h2>
-                            <h3 class="galeria-producto-detalle-name"><%=product.name %></h3>
                             <h4 class="galeria-producto-detalle-size"><%=product.size %></h4>
+                            <h3 class="galeria-producto-detalle-name"><%=product.name %></h3>
+                            <h4 class="galeria-producto-detalle-artist"><%=product.artist %></h4>
                         </div>
                     </a> 
                 </article>

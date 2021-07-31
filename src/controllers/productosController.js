@@ -20,11 +20,10 @@ let controller = {
         for (let product of products) {
             if(product.id == idObra){
                 productoEncontrado = product;
-            }
-        }
-        console.log(productoEncontrado.)
-
-        res.render('detalle_producto', {product : productoEncontrado});
+                res.render('detalle_producto', {product : productoEncontrado});
+            };
+        };
+        res.redirect('index');        
     },
     createProduct: (req, res) => {
         res.render('crear_producto');
