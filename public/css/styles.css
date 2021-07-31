@@ -361,7 +361,6 @@ a.botonCTA:hover {
     -webkit-font-smoothing: antialiased;
     top: 2.5em;
     font-weight: 900;
-    letter-spacing: 0.0em;
     color: #9E0051;
     position: relative;
     text-align: center;
@@ -937,10 +936,18 @@ margin-bottom:1rem;
     padding-top: 4em;
     text-decoration-line: none;
 }
+.galeria-producto-articulo-encabezado{
+    width: 100%;
+    font-size: 2em;
+    font-weight: 900;
+    color: #9E0051;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+
+}
 
 .galeria-producto-articulo{
     margin-top: 2em;
-
     margin-bottom: 3em;
 }
 .galeria-producto{

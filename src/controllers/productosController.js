@@ -23,7 +23,6 @@ let controller = {
                 res.render('detalle_producto', {product : productoEncontrado});
             };
         };
-        res.redirect('index');        
     },
     createProduct: (req, res) => {
         res.render('crear_producto');
