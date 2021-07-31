@@ -14,9 +14,9 @@
     <main>
         <section class="registro-ppal">
             <h2 class="titulares-secundarios">Completá tus datos.</h2>
-            <% if (locals.errors) { errors.forEach(error => { %>
+          <% if (locals.errors) { errors.forEach(error => { %>
                 <p class="error-message"><%= error.msg %></p>
-           <% })}  %> 
+           <% })}  %>
                 <form action="/user/crear_cuenta" id="register-form" method="POST">
                 <div class="form-section">
                     <input type="text" name="nombre" class="login-field" placeholder="Nombre y Apellido" value="<%= locals.old && old.nombre ? old.nombre : '' %>">

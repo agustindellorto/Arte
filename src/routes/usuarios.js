@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const {check} = require('express-validator');
+const {body} = require('express-validator');
 
 const usersController = require('../controllers/usersController');
 
 const validateRegister = [
-    check('nombre').isEmpty().withMessage('Debes completar con tu nombre y apellido'),
-    check('email').isEmail().withMessage('Debes completar con un email válido'),
-    check('username').isLength({min:6, max:15}).withMessage('Nombre de usuario debe tener entre 6-15 caractéres'),
-    check('password').isLength({min:6, max:15}).withMessage('Contraseña debe tener entre 6-15 caractéres')
+    body('nombre').notEmpty().withMessage('Debes completar con tu nombre y apellido'),
+    body('email').isEmail().withMessage('Debes completar con un email válido'),
+    body('usuario').isLength({min:6, max:15}).withMessage('Nombre de usuario debe tener entre 6-15 caractéres'),
+    body('password').isLength({min:6, max:15}).withMessage('Contraseña debe tener entre 6-15 caractéres')
 ];
 
 router.get('/ingresar', usersController.login);
