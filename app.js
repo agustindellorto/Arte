@@ -3,14 +3,15 @@ const path = require('path');
 
 const app = express();
 
-const rutasMain = require('./routes/main');
-const rutasProductos = require('./routes/productos');
-const rutasUsuarios = require('./routes/usuarios');
-const rutasCarrito = require('./routes/carrito');
+const rutasMain = require('./src/routes/main');
+const rutasProductos = require('./src/routes/productos');
+const rutasUsuarios = require('./src/routes/usuarios');
+const rutasCarrito = require('./src/routes/carrito');
 
 app.set('view engine', 'ejs');
+app.set('views', './src/views');
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 app.use(express.urlencoded({ extended: false }));
 
@@ -28,7 +29,7 @@ app.use('/galeria', rutasProductos);
 
 app.use('/carrito', rutasCarrito);
 
-app.use('/user', rutasUsuarios);  /* Falta desarrollar cuando profundizemos algunos conceptos*/
+app.use('/user', rutasUsuarios);  
 
 
 

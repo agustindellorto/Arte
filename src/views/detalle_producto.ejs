@@ -23,15 +23,15 @@
         <section class="producto">
             <div class="producto-imagen">
                 <div class="producto-imagen-principal">
-                    <img src="/img/Abstracto.jpeg" alt="Dibujo Mia Zavalia">
+                    <img src="/img/<%=product.img%>" alt="<%=product.name%>">
                 </div>
                 <div class="producto-imagenes-miniaturas">
 
                 </div>
             </div>
             <div class="producto-info-detalle-1">
-                <h1>Zaraza<span>2020</span></h1>
-                <h2>Menganito</h2>
+                <h1><%=product.name%><span></span></h1>
+                <h2><%=product.artist%></h2>
             </div>
             <div class="producto-info-detalle-2">
                     <ul class="producto-info-detalle-list">
@@ -40,7 +40,7 @@
                                 Técnica
                             </div>
                             <div class="info">
-                                Óleo en tablero
+                                <%=product.medium%>
                             </div>
                         </li>
                         <li>
@@ -48,7 +48,7 @@
                                 Otros detalles
                             </div>
                             <div class="info">
-                                Obra sobre panel sintético.
+                                <%=product.category%>
                             </div>
                         </li>
                         <li>
@@ -56,18 +56,18 @@
                                 Dimensiones
                             </div>
                             <div class="info">
-                                64x55cm
+                                <%=product.size%>
                             </div>
                         </li>
                     </ul>
             </div>
             <div class="producto-info-detalle-3">
             <h1>Sobre la obra</h1>
-                <p>Holland ha realizado una serie de cuadros con este tema de dos desnudos en sustitución de una bombilla. Él cuenta cómo es en respuesta a la queja de su esposa sobre su renuencia a hacer las tareas domésticas comunes de los "hombres", mostrando cómo las mujeres podían hacerlas.</p>
+                <p><%=product.description%></p>
             </div>
             <div class="producto-compra">
                 <div class="producto-compra-precio">
-                    <h1>$40.000</h1>
+                    <h1>$<%=product.price%></h1>
                 </div>
                 <div>
                     <h4>Envío y devolución gratis.</h4>

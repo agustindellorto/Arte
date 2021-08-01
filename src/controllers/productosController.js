@@ -6,20 +6,33 @@ const productosArchivo = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 
 let controller = {
+
     galeria: (req, res)=>{
-        res.render('galeria');  /*Conectar con archivoJson, enviar como variable el array de productos y hacer un for en la vista para mostrarlos todos */
+        
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        res.render('galeria', {productos: products})
     },
-    detail: (req, res)=>{   /* faltaria conectar con archivoJson para terminar esto*/
+    detail: (req, res)=>{
+       
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        
         let idObra = req.params.id;
-        res.render('detalle_producto');
+        let productoEncontrado = {};
+
+        for (let product of products) {
+            if(product.id == idObra){
+                productoEncontrado = product;
+                res.render('detalle_producto', {product : productoEncontrado});
+            };
+        };
     },
     createProduct: (req, res) => {
         res.render('crear_producto');
     },
     
     storeProduct: (req, res) => {
-        console.log('datos:', req.body)
-     /*  let idNuevo=0
+        console.log(req.file)
+       let idNuevo=0
       for(let p of productosArchivo){
           if(idNuevo<p.id){
               idNuevo=p.id
@@ -27,6 +40,7 @@ let controller = {
       }
         idNuevo++;
 
+        let nombreImagen= req.file.filename
 
         let productoNuevo={
             id: idNuevo,
@@ -35,11 +49,10 @@ let controller = {
             medium: req.body.medio,
             category: req.body.tema,
             description: req.body.descripcion,
-            width: req.body.ancho,
-            height: req.body.alto,
-            depth: req.body.profundidad,
+            size: req.body.ancho + 'x' + req.body.alto + 'cm',
             price: req.body.precio,
-            img: "obra-arte4.jpg"
+            discount: req.body.descuento + '% off',
+            img: nombreImagen
         };
 
 
@@ -48,15 +61,51 @@ let controller = {
         (fs.readFileSync(productsFilePath, 'utf-8'));
         fs.writeFileSync(productsFilePath, JSON.stringify(productosArchivo, null, ' '));
 
-        res.redirect('/galeria')*/
+        res.redirect('/galeria')
     },
 
     editProduct: (req, res) => {
-        res.render('editar_producto'); /* falta poner la logica para traer el formulario con los datos de "x" producto a editar*/
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        let id = req.params.id;
+		let obraId;
+
+		for (let obra of products){
+			if (id==obra.id){
+				obraId=obra;
+			}
+		}
+        
+		
+        res.render('editar_producto',{obraAEditar: obraId}); 
     },
 
     editStore: (req, res) => {
-        console.log("Aca va la logica guardar edicion de producto en el json");
+        let productsFilePath = path.join(__dirname, '../database/products.json');
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        let id = req.params.id;
+        console.log("datos:",req.body);
+
+/*
+		for (let obra of products){
+			if (id==obra.id){
+				obra.name= req.body.name;
+				obra.artist= req.body.artist;
+				obra.medium= req.body.medium;
+				obra.category= req.body.category;
+				obra.description= req.body.description;
+                obra.size= req.body.size;
+                obra.price= req.body.price;
+                obra.discount= req.body.discount;
+				
+			}
+		}
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,' '));
+
+		res.redirect('/');*/
     },
 
     delete: (req, res) => {
