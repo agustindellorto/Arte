@@ -39,7 +39,6 @@ let controller = {
                 res.redirect('/');
             } else {
                 let user= req.body;
-                console.log(errors);
                 res.render('registro', { errors: errors.array(), old: user });
             }
         

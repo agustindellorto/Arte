@@ -262,5 +262,13 @@
   "email": "mgrande@hotmail.com",
   "password": "humauaca12",
   "img": null
+ },
+ {
+  "id": 34,
+  "user_name": "agustin50",
+  "full_name": "Agustin Dell Orto",
+  "email": "agus@hotmail.com",
+  "password": "graciasbelucapa",
+  "img": null
  }
 ]
