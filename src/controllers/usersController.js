@@ -39,7 +39,7 @@ let controller = {
                 res.redirect('/');
             } else {
                 let user= req.body;
-                res.render('registro', { errors: errors.array(), old: user });
+                res.render('registro', { errors: errors.mapped(), old: user });
             }
         
         },

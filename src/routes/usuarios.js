@@ -8,7 +8,8 @@ const validateRegister = [
     body('nombre').notEmpty().withMessage('Debes completar con tu nombre y apellido'),
     body('email').isEmail().withMessage('Debes completar con un email válido'),
     body('usuario').isLength({min:6, max:15}).withMessage('Nombre de usuario debe tener entre 6-15 caractéres'),
-    body('password').isLength({min:6, max:15}).withMessage('Contraseña debe tener entre 6-15 caractéres')
+    body('password').isLength({min:6, max:15}).withMessage('Contraseña debe tener entre 6-15 caractéres'),
+    body('password2').notEmpty().withMessage('Debes validar tu contraseña')
 ];
 
 router.get('/ingresar', usersController.login);

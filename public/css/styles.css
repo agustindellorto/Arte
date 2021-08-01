@@ -625,6 +625,10 @@ background-color:#9E0051;
 background-color:#9E0051;
 }
 
+#opcion-crear-cuenta:hover {
+    background-color:#9E0051;
+    }
+
 .login-caja-ppal a {
     color: inherit;
 }
@@ -640,6 +644,7 @@ text-decoration: underline;
   
 .login-field {
     border:solid 1px #f5f4f2;
+    border-radius: 5px;
     color: #212125;
     width:100%;
     display:block;
@@ -653,9 +658,9 @@ text-decoration: underline;
   }
 
 .opcion-registrarse p {
-    background-color: #9b5d64;
+    background-color: #9E0051;
     color: white;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     margin-top: 3.5em;
 }  
@@ -676,6 +681,22 @@ margin-bottom:1rem;
     color: #9E0051;
 }
 
+a#opcion-crear-cuenta {
+text-decoration: none;
+font-size: 1rem;
+color: #F5F5F7;
+background-color: #212125;
+font-weight: 500;
+letter-spacing: 0.1em;
+padding: 10px;
+border: 0px;
+border-radius: 3px;  
+text-align: center;
+width: 40%;
+position: absolute;
+
+}
+
 .error-message {
     font-size: 0.9rem;
     line-height: 1rem;
@@ -683,6 +704,9 @@ margin-bottom:1rem;
     color:rgb(109, 14, 13);
 }
 
+.is-invalid {
+    border: 1px solid rgb(109, 14, 13);
+}
 
 /* PRODUCTO CREAR */
 
@@ -1154,8 +1178,9 @@ margin-bottom:1rem;
     .opcion-registrarse-desktop {
         display: block;
         width:50%;
+        position: relative;
         margin-top:6.5em;
-        margin-right: 3em;
+        margin-right: 2em;
     }
     .opcion-registrarse {
         display: none;
