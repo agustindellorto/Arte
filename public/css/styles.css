@@ -768,6 +768,16 @@ position: absolute;
     width: 100%;
 }
 
+#boton-eliminar-producto{
+    border: solid 1px #212125;;
+    border-radius: 3px;
+    width: 100%;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 1.4em;
+    
+}
+
 
 /* PRODUCTO DETALLE */
 

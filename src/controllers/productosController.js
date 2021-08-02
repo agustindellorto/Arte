@@ -65,7 +65,7 @@ let controller = {
     },
 
     editProduct: (req, res) => {
-        let productsFilePath = path.join(__dirname, '../database/products.json');
+        
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
         let id = req.params.id;
@@ -82,13 +82,13 @@ let controller = {
     },
 
     editStore: (req, res) => {
-        let productsFilePath = path.join(__dirname, '../database/products.json');
+       
         let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
         let id = req.params.id;
         console.log("datos:",req.body);
 
-/*
+
 		for (let obra of products){
 			if (id==obra.id){
 				obra.name= req.body.name;
@@ -99,17 +99,26 @@ let controller = {
                 obra.size= req.body.size;
                 obra.price= req.body.price;
                 obra.discount= req.body.discount;
-				
+				break;
 			}
 		}
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,' '));
 
-		res.redirect('/');*/
+		res.redirect('/');
     },
 
     delete: (req, res) => {
-        console.log("Aca va la logica eliminar de producto en el json");
+        let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        let id = req.params.id;
+
+		let newProduct = products.filter(function(obra){
+			return id!=obra.id;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProduct,null,' '));
+
+		res.redirect('/galeria');
     },
 }
 

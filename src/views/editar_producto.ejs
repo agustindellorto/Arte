@@ -25,10 +25,10 @@
                         <input value="<%=obraAEditar.name %>"type="text" name="nombre" class="crear-producto-field" required>
                     </div>
 
-                    <div class="crear-producto">
+                    <!--<div class="crear-producto">
                         <label for="nombre">Artista</label>
                         <input value="<%=obraAEditar.artist %>"type="text" name="nombre" class="crear-producto-field" required>
-                    </div>
+                    </div>-->
                     
                     <div class="crear-producto">
                         <label for="fecha-creacion">Fecha de Creación</label>
@@ -251,6 +251,11 @@
                         <input type="submit" class="crear-producto-field" value="Subir obra">
                         <input type="reset" class="crear-producto-field" value="Borrar formulario">
                     </div>
+                </form>
+                
+                <form action="/galeria/<%=obraAEditar.id%>?_method=DELETE" method="POST"onsubmit="return confirm('Está seguro que desea eliminar el producto?');"> 
+                    
+                    <button id="boton-eliminar-producto" type="submit"  >Eliminar obra</button>
                 </form>
                 
             </section> 

@@ -36,17 +36,17 @@
   "img": "obra-arte16.jpg"
  },
  {
-  "id": 4,
-  "name": "Elliott's Beaksedge",
-  "artist": "Louisette Antyshev",
-  "medium": "other",
-  "category": "self-portrait",
-  "description": "Unspecified fracture of ischium",
-  "size": "24x100cm",
-  "price": 4019,
-  "discount": 18,
-  "img": "obra-arte2.jpg"
- },
+   "id": 4,
+   "name": "Elliott's Beaksedge",
+   "artist": "Louisette Antyshev",
+   "medium": "other",
+   "category": "self-portrait",
+   "description": "Unspecified fracture of ischium",
+   "size": "24x100cm",
+   "price": 4019,
+   "discount": 18,
+   "img": "obra-arte2.jpg"
+  },
  {
   "id": 5,
   "name": "Mt. Hood Bugbane",
